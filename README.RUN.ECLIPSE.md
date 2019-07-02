@@ -8,3 +8,6 @@
 
 ### Installing the jars to the local Maven repository ###
     ./gradlew installAll
+
+### Eclipse import Kafka project ###
+    import -> Gradle -> Existing Gradle Project

@@ -1,0 +1,173 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "kafka",
+        "directory" : "/Users/m/code/bigdata/kafka/kafka",
+        "sources" : [
+            "/Users/m/code/bigdata/kafka/kafka/src/main/java"
+        ],
+        "dependencies" : [
+        ],
+        "classpath" : [
+        ],
+        "out" : "/Users/m/code/bigdata/kafka/kafka/build",
+        "classesDir" : "/Users/m/code/bigdata/kafka/kafka/.bloop/kafka/build/classes",
+        "resources" : [
+            "/Users/m/code/bigdata/kafka/kafka/src/main/resources"
+        ],
+        "java" : {
+            "options" : [
+                "-target",
+                "1.8",
+                "-source",
+                "1.8",
+                "-g",
+                "-sourcepath",
+                "-proc:none",
+                "-XDuseUnsharedTable=true"
+            ]
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "commons-cli",
+                    "name" : "commons-cli",
+                    "version" : "1.3.1",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-cli",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar"
+                        },
+                        {
+                            "name" : "commons-cli",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/12ec02d8cb9fbb33bd05506109a4fc8bcc3578/commons-cli-1.3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.rat",
+                    "name" : "apache-rat-tasks",
+                    "version" : "0.13",
+                    "artifacts" : [
+                        {
+                            "name" : "apache-rat-tasks",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.rat/apache-rat-tasks/0.13/6d7b20532f93494ef410ce6786e254d34929b96e/apache-rat-tasks-0.13.jar"
+                        },
+                        {
+                            "name" : "apache-rat-tasks",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.rat/apache-rat-tasks/0.13/42790a6041f0de75aadc75b22a1a5716cf892061/apache-rat-tasks-0.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-collections",
+                    "name" : "commons-collections",
+                    "version" : "3.2.2",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-collections",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar"
+                        },
+                        {
+                            "name" : "commons-collections",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.commons",
+                    "name" : "commons-compress",
+                    "version" : "1.11",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-compress",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.11/f43ce4c878078cbcfbb061353aa672a4c8e81443/commons-compress-1.11.jar"
+                        },
+                        {
+                            "name" : "commons-compress",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.11/ced09f6892566ccbdcbb0ad88548e246bd6851e5/commons-compress-1.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-io",
+                    "name" : "commons-io",
+                    "version" : "2.2",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-io",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.2/83b5b8a7ba1c08f9e8c8ff2373724e33d3c1e22a/commons-io-2.2.jar"
+                        },
+                        {
+                            "name" : "commons-io",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.2/8d6b98f21262995489a8418fff8da992d7e25c1e/commons-io-2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.rat",
+                    "name" : "apache-rat-api",
+                    "version" : "0.13",
+                    "artifacts" : [
+                        {
+                            "name" : "apache-rat-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.rat/apache-rat-api/0.13/a02aa02e76f9a929c9f1fecfae8e2f5bb0cf59d3/apache-rat-api-0.13.jar"
+                        },
+                        {
+                            "name" : "apache-rat-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.rat/apache-rat-api/0.13/19f9f01985ac1134e250996b8fe3b3f3eddc36a5/apache-rat-api-0.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-lang",
+                    "name" : "commons-lang",
+                    "version" : "2.6",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-lang",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar"
+                        },
+                        {
+                            "name" : "commons-lang",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/67313d715fbf0ea4fd0bdb69217fb77f807a8ce5/commons-lang-2.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.rat",
+                    "name" : "apache-rat-core",
+                    "version" : "0.13",
+                    "artifacts" : [
+                        {
+                            "name" : "apache-rat-core",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.rat/apache-rat-core/0.13/ad2a849d2b0cc5148647ea39b0f2f52b4cb3fd88/apache-rat-core-0.13.jar"
+                        },
+                        {
+                            "name" : "apache-rat-core",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.rat/apache-rat-core/0.13/c342a27c8c586cac0ee1e44d55debcc077a08f86/apache-rat-core-0.13-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

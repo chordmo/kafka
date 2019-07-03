@@ -1,37 +1,19 @@
 {
     "version" : "1.1.2",
     "project" : {
-        "name" : "examples",
-        "directory" : "/Users/m/code/bigdata/kafka/kafka/streams/examples",
+        "name" : "upgrade-system-tests-0100",
+        "directory" : "/Users/m/code/bigdata/kafka/kafka/streams/upgrade-system-tests-0100",
         "sources" : [
-            "/Users/m/code/bigdata/kafka/kafka/streams/examples/src/main/java"
+            "/Users/m/code/bigdata/kafka/kafka/streams/upgrade-system-tests-0100/src/main/java"
         ],
         "dependencies" : [
-            "json",
-            "streams"
         ],
         "classpath" : [
-            "/Users/m/code/bigdata/kafka/kafka/.bloop/streams/build/classes",
-            "/Users/m/code/bigdata/kafka/kafka/.bloop/json/build/classes",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.26/12f5c685b71c3027fd28bcf90528ec4ec74bf818/slf4j-log4j12-1.7.26.jar",
-            "/Users/m/code/bigdata/kafka/kafka/.bloop/api/build/classes",
-            "/Users/m/code/bigdata/kafka/kafka/.bloop/clients/build/classes",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/5.18.3/6d3f8594ab85cc3c473fa97a5d5cb94cf5568e2b/rocksdbjni-5.18.3.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.9/4b04126963103216c9c43b0f34bbc36315654204/jackson-datatype-jdk8-2.9.9.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.9/d6eb9817d9c7289a91f043ac5ee02a6b3cc86238/jackson-databind-2.9.9.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.4.0-1/8cc7f9b0f2bd53ef3bd0e38fccc678691f983474/zstd-jni-1.4.0-1.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.6.0/b49e2b422a5b7145ba7aa0c3f60c13664a5c5acf/lz4-java-1.6.0.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.7.3/241bb74a1eb37d68a4e324a4bc3865427de0a62d/snappy-java-1.1.7.3.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/d3466bc9321fe84f268a1adb3b90373fc14b0eb5/javax.ws.rs-api-2.1.1.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar",
-            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.9/bfff5af9fb8347d26bbb7959cb9b4fe9a2b0ca5e/jackson-core-2.9.9.jar"
         ],
-        "out" : "/Users/m/code/bigdata/kafka/kafka/streams/examples/build",
-        "classesDir" : "/Users/m/code/bigdata/kafka/kafka/.bloop/examples/build/classes",
+        "out" : "/Users/m/code/bigdata/kafka/kafka/streams/upgrade-system-tests-0100/build",
+        "classesDir" : "/Users/m/code/bigdata/kafka/kafka/.bloop/upgrade-system-tests-0100/build/classes",
         "resources" : [
-            "/Users/m/code/bigdata/kafka/kafka/streams/examples/src/main/resources"
+            "/Users/m/code/bigdata/kafka/kafka/streams/upgrade-system-tests-0100/src/main/resources"
         ],
         "java" : {
             "options" : [
@@ -65,198 +47,6 @@
         "resolution" : {
             "modules" : [
                 {
-                    "organization" : "org.slf4j",
-                    "name" : "slf4j-log4j12",
-                    "version" : "1.7.26",
-                    "artifacts" : [
-                        {
-                            "name" : "slf4j-log4j12",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.26/12f5c685b71c3027fd28bcf90528ec4ec74bf818/slf4j-log4j12-1.7.26.jar"
-                        },
-                        {
-                            "name" : "slf4j-log4j12",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.26/ed14c4a786ee8cf8d0b0a39da0f5a8f766de5598/slf4j-log4j12-1.7.26-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "org.slf4j",
-                    "name" : "slf4j-api",
-                    "version" : "1.7.26",
-                    "artifacts" : [
-                        {
-                            "name" : "slf4j-api",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar"
-                        },
-                        {
-                            "name" : "slf4j-api",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/21c84cdf9da108216b5e402611d4af479b60cb8/slf4j-api-1.7.26-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "org.rocksdb",
-                    "name" : "rocksdbjni",
-                    "version" : "5.18.3",
-                    "artifacts" : [
-                        {
-                            "name" : "rocksdbjni",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/5.18.3/6d3f8594ab85cc3c473fa97a5d5cb94cf5568e2b/rocksdbjni-5.18.3.jar"
-                        },
-                        {
-                            "name" : "rocksdbjni",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/5.18.3/f7e4c6b13c8cc0c27af84241cdacc5cebd8c11b/rocksdbjni-5.18.3-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "com.fasterxml.jackson.datatype",
-                    "name" : "jackson-datatype-jdk8",
-                    "version" : "2.9.9",
-                    "artifacts" : [
-                        {
-                            "name" : "jackson-datatype-jdk8",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.9/4b04126963103216c9c43b0f34bbc36315654204/jackson-datatype-jdk8-2.9.9.jar"
-                        },
-                        {
-                            "name" : "jackson-datatype-jdk8",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.9/dd2a21d5d75b2ac56da7508780c8acf88b727d15/jackson-datatype-jdk8-2.9.9-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "com.fasterxml.jackson.core",
-                    "name" : "jackson-databind",
-                    "version" : "2.9.9",
-                    "artifacts" : [
-                        {
-                            "name" : "jackson-databind",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.9/d6eb9817d9c7289a91f043ac5ee02a6b3cc86238/jackson-databind-2.9.9.jar"
-                        },
-                        {
-                            "name" : "jackson-databind",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.9/8b717e1bc24a642cee070ae3860f04eb20c92779/jackson-databind-2.9.9-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "log4j",
-                    "name" : "log4j",
-                    "version" : "1.2.17",
-                    "artifacts" : [
-                        {
-                            "name" : "log4j",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar"
-                        },
-                        {
-                            "name" : "log4j",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "com.github.luben",
-                    "name" : "zstd-jni",
-                    "version" : "1.4.0-1",
-                    "artifacts" : [
-                        {
-                            "name" : "zstd-jni",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.4.0-1/8cc7f9b0f2bd53ef3bd0e38fccc678691f983474/zstd-jni-1.4.0-1.jar"
-                        },
-                        {
-                            "name" : "zstd-jni",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.4.0-1/613644b5d81071cc72f52b984500034165a982a4/zstd-jni-1.4.0-1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "org.lz4",
-                    "name" : "lz4-java",
-                    "version" : "1.6.0",
-                    "artifacts" : [
-                        {
-                            "name" : "lz4-java",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.6.0/b49e2b422a5b7145ba7aa0c3f60c13664a5c5acf/lz4-java-1.6.0.jar"
-                        },
-                        {
-                            "name" : "lz4-java",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.6.0/f70c1919da33149ca0dc1a3ab7bd99e332d7830d/lz4-java-1.6.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "org.xerial.snappy",
-                    "name" : "snappy-java",
-                    "version" : "1.1.7.3",
-                    "artifacts" : [
-                        {
-                            "name" : "snappy-java",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.7.3/241bb74a1eb37d68a4e324a4bc3865427de0a62d/snappy-java-1.1.7.3.jar"
-                        },
-                        {
-                            "name" : "snappy-java",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.7.3/83002a7c6641e17c16ecfad3342fb8e22033b775/snappy-java-1.1.7.3-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "javax.ws.rs",
-                    "name" : "javax.ws.rs-api",
-                    "version" : "2.1.1",
-                    "artifacts" : [
-                        {
-                            "name" : "javax.ws.rs-api",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/d3466bc9321fe84f268a1adb3b90373fc14b0eb5/javax.ws.rs-api-2.1.1.jar"
-                        },
-                        {
-                            "name" : "javax.ws.rs-api",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/c8cd68f41c63e60c89321caa95513376aace6711/javax.ws.rs-api-2.1.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "com.fasterxml.jackson.core",
-                    "name" : "jackson-annotations",
-                    "version" : "2.9.0",
-                    "artifacts" : [
-                        {
-                            "name" : "jackson-annotations",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar"
-                        },
-                        {
-                            "name" : "jackson-annotations",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/a0ad4e203304ccab7e01266fa814115850edb8a9/jackson-annotations-2.9.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization" : "com.fasterxml.jackson.core",
-                    "name" : "jackson-core",
-                    "version" : "2.9.9",
-                    "artifacts" : [
-                        {
-                            "name" : "jackson-core",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.9/bfff5af9fb8347d26bbb7959cb9b4fe9a2b0ca5e/jackson-core-2.9.9.jar"
-                        },
-                        {
-                            "name" : "jackson-core",
-                            "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.9/c8a91180aef81d62f44b27cef42bacb168871a4c/jackson-core-2.9.9-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization" : "commons-beanutils",
                     "name" : "commons-beanutils",
                     "version" : "1.9.3",
@@ -269,6 +59,22 @@
                             "name" : "commons-beanutils",
                             "classifier" : "sources",
                             "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.3/9d70af7c5982bd09c33efa97ac98cee6363ba0f0/commons-beanutils-1.9.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "junit",
+                    "name" : "junit",
+                    "version" : "3.8.1",
+                    "artifacts" : [
+                        {
+                            "name" : "junit",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/junit/junit/3.8.1/99129f16442844f6a4a11ae22fbbee40b14d774f/junit-3.8.1.jar"
+                        },
+                        {
+                            "name" : "junit",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/junit/junit/3.8.1/525753763e53f6f76da052b316d0f2e3bfa4d73/junit-3.8.1-sources.jar"
                         }
                     ]
                 },
@@ -337,6 +143,22 @@
                     ]
                 },
                 {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-databind",
+                    "version" : "2.6.3",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-databind",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.3/5c4fcae53dd82e2c549b8322d78c6ff47c94c8a8/jackson-databind-2.6.3.jar"
+                        },
+                        {
+                            "name" : "jackson-databind",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.3/e50e2cdcbbfd50346a192b18df3a05cbb0119176/jackson-databind-2.6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization" : "com.github.spotbugs",
                     "name" : "spotbugs",
                     "version" : "3.1.12",
@@ -385,6 +207,38 @@
                     ]
                 },
                 {
+                    "organization" : "org.apache.kafka",
+                    "name" : "connect-json",
+                    "version" : "0.10.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "connect-json",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-json/0.10.0.1/bf27e812ad6674f40662a5edb3aec65f22f541b0/connect-json-0.10.0.1.jar"
+                        },
+                        {
+                            "name" : "connect-json",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-json/0.10.0.1/f7853674c3195aacac33516a87d8e6fb7788b344/connect-json-0.10.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.zookeeper",
+                    "name" : "zookeeper",
+                    "version" : "3.4.6",
+                    "artifacts" : [
+                        {
+                            "name" : "zookeeper",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.6/1b2502e29da1ebaade2357cd1de35a855fa3755/zookeeper-3.4.6.jar"
+                        },
+                        {
+                            "name" : "zookeeper",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.6/10cb14f3893f8bdcaf4e2619a9a1f6b9cedec6b7/zookeeper-3.4.6-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization" : "commons-collections",
                     "name" : "commons-collections",
                     "version" : "3.2.2",
@@ -401,18 +255,34 @@
                     ]
                 },
                 {
-                    "organization" : "org.hamcrest",
-                    "name" : "hamcrest-core",
-                    "version" : "1.3",
+                    "organization" : "org.apache.kafka",
+                    "name" : "connect-api",
+                    "version" : "0.10.0.1",
                     "artifacts" : [
                         {
-                            "name" : "hamcrest-core",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"
+                            "name" : "connect-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-api/0.10.0.1/ecb51f0dd038d576350afac7394db2de13972bf5/connect-api-0.10.0.1.jar"
                         },
                         {
-                            "name" : "hamcrest-core",
+                            "name" : "connect-api",
                             "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar"
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.kafka/connect-api/0.10.0.1/c83337f0d955b770afef081c989826ec72c3a59a/connect-api-0.10.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.slf4j",
+                    "name" : "slf4j-api",
+                    "version" : "1.7.21",
+                    "artifacts" : [
+                        {
+                            "name" : "slf4j-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar"
+                        },
+                        {
+                            "name" : "slf4j-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/f285ac123f201fb4b028bac556928d7cf527ef48/slf4j-api-1.7.21-sources.jar"
                         }
                     ]
                 },
@@ -424,6 +294,22 @@
                         {
                             "name" : "antlr",
                             "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.101tec",
+                    "name" : "zkclient",
+                    "version" : "0.8",
+                    "artifacts" : [
+                        {
+                            "name" : "zkclient",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.101tec/zkclient/0.8/c0f700a4a3b386279d7d8dd164edecbe836cbfdb/zkclient-0.8.jar"
+                        },
+                        {
+                            "name" : "zkclient",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.101tec/zkclient/0.8/9e0eb39e2f1bcd483a7fdb8b7affb12fa11209fa/zkclient-0.8-sources.jar"
                         }
                     ]
                 },
@@ -440,6 +326,22 @@
                             "name" : "org.jacoco.core",
                             "classifier" : "sources",
                             "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.core/0.8.3/369d145aa0a61fa101c06a6dc5dcf6864a4c7d7/org.jacoco.core-0.8.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-core",
+                    "version" : "2.6.3",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-core",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.3/142ce64dcd709a4b5f6e7d71305a31d3893d077/jackson-core-2.6.3.jar"
+                        },
+                        {
+                            "name" : "jackson-core",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.3/725bd4a1edfbf519b03ea21967f7fc5270140d3e/jackson-core-2.6.3-sources.jar"
                         }
                     ]
                 },
@@ -519,6 +421,22 @@
                     ]
                 },
                 {
+                    "organization" : "io.netty",
+                    "name" : "netty",
+                    "version" : "3.7.0.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.7.0.Final/7a8c35599c68c0bf383df74469aa3e03d9aca87/netty-3.7.0.Final.jar"
+                        },
+                        {
+                            "name" : "netty",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.7.0.Final/92d6795b502e5194f84c5d1fd05c39800413fe53/netty-3.7.0.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization" : "org.ow2.asm",
                     "name" : "asm-tree",
                     "version" : "7.0",
@@ -583,6 +501,38 @@
                     ]
                 },
                 {
+                    "organization" : "org.rocksdb",
+                    "name" : "rocksdbjni",
+                    "version" : "4.8.0",
+                    "artifacts" : [
+                        {
+                            "name" : "rocksdbjni",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/4.8.0/b543fc4ea5b52ad790730dee376ba0df06d9f5f7/rocksdbjni-4.8.0.jar"
+                        },
+                        {
+                            "name" : "rocksdbjni",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.rocksdb/rocksdbjni/4.8.0/fb7c2b288a4ed1f183e8ceb8b9b6da537b421e0e/rocksdbjni-4.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "net.jpountz.lz4",
+                    "name" : "lz4",
+                    "version" : "1.3.0",
+                    "artifacts" : [
+                        {
+                            "name" : "lz4",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.jpountz.lz4/lz4/1.3.0/c708bb2590c0652a642236ef45d9f99ff842a2ce/lz4-1.3.0.jar"
+                        },
+                        {
+                            "name" : "lz4",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.jpountz.lz4/lz4/1.3.0/31debfaa8a55bc4af1d4fe63a8ad0a2a7e851274/lz4-1.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization" : "com.ibm.icu",
                     "name" : "icu4j",
                     "version" : "63.1",
@@ -611,6 +561,22 @@
                             "name" : "jaxen",
                             "classifier" : "sources",
                             "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/jaxen/jaxen/1.1.6/7b58b090cb2f189344ee80ccc4cfbab29fdd6f56/jaxen-1.1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.kafka",
+                    "name" : "kafka-streams",
+                    "version" : "0.10.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "kafka-streams",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/0.10.0.1/c75f34460a6a211fdd52df21c211b545c7a7411d/kafka-streams-0.10.0.1.jar"
+                        },
+                        {
+                            "name" : "kafka-streams",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/0.10.0.1/d9bcf668fb097856eaebd8ebf1158732dd3fabd7/kafka-streams-0.10.0.1-sources.jar"
                         }
                     ]
                 },
@@ -647,6 +613,22 @@
                     ]
                 },
                 {
+                    "organization" : "org.slf4j",
+                    "name" : "slf4j-log4j12",
+                    "version" : "1.6.1",
+                    "artifacts" : [
+                        {
+                            "name" : "slf4j-log4j12",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.6.1/bd245d6746cdd4e6203e976e21d597a46f115802/slf4j-log4j12-1.6.1.jar"
+                        },
+                        {
+                            "name" : "slf4j-log4j12",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.6.1/7a26b08b265f55622fa1fed3bda68bbd37a465ba/slf4j-log4j12-1.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization" : "org.ow2.asm",
                     "name" : "asm-commons",
                     "version" : "7.0",
@@ -679,6 +661,22 @@
                     ]
                 },
                 {
+                    "organization" : "jline",
+                    "name" : "jline",
+                    "version" : "0.9.94",
+                    "artifacts" : [
+                        {
+                            "name" : "jline",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/jline/jline/0.9.94/99a18e9a44834afdebc467294e1138364c207402/jline-0.9.94.jar"
+                        },
+                        {
+                            "name" : "jline",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/jline/jline/0.9.94/7ac7b49164e4f9d250309c70caee645151b87e46/jline-0.9.94-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization" : "org.antlr",
                     "name" : "antlr4-runtime",
                     "version" : "4.7.2",
@@ -691,6 +689,22 @@
                             "name" : "antlr4-runtime",
                             "classifier" : "sources",
                             "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.7.2/14fff5b9b6c84f3b3a1fe0980e8560a555df07c0/antlr4-runtime-4.7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.kafka",
+                    "name" : "kafka-clients",
+                    "version" : "0.10.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "kafka-clients",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/0.10.0.1/36ebf4044d0e546bf74c95629d736ca63320a323/kafka-clients-0.10.0.1.jar"
+                        },
+                        {
+                            "name" : "kafka-clients",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/0.10.0.1/835470817c2e312c6b4d0bf5bca9726b63a23032/kafka-clients-0.10.0.1-sources.jar"
                         }
                     ]
                 },
@@ -759,29 +773,34 @@
                     ]
                 },
                 {
-                    "organization" : "org.apache.kafka",
-                    "name" : "kafka-streams-test-utils",
-                    "version" : "2.3.1-SNAPSHOT",
-                    "artifacts" : [
-                        {
-                            "name" : "test-utils",
-                            "path" : "/Users/m/code/bigdata/kafka/kafka/streams/test-utils/build/libs/kafka-streams-test-utils-2.3.1-SNAPSHOT.jar"
-                        }
-                    ]
-                },
-                {
                     "organization" : "com.fasterxml.jackson.core",
                     "name" : "jackson-annotations",
-                    "version" : "2.9.9",
+                    "version" : "2.6.0",
                     "artifacts" : [
                         {
                             "name" : "jackson-annotations",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.9/2ea299c145207161c212e28abbc8f513fa245940/jackson-annotations-2.9.9.jar"
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.0/a0990e2e812ac6639b6ce955c91b13228500476e/jackson-annotations-2.6.0.jar"
                         },
                         {
                             "name" : "jackson-annotations",
                             "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.9/4ac77aa5799fcf00a9cde00cd7da4d08bdc038ff/jackson-annotations-2.9.9-sources.jar"
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.0/7bcb615d523d88acbc121c92aafeba8d37a83792/jackson-annotations-2.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "log4j",
+                    "name" : "log4j",
+                    "version" : "1.2.16",
+                    "artifacts" : [
+                        {
+                            "name" : "log4j",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/7999a63bfccbc7c247a9aea10d83d4272bd492c6/log4j-1.2.16.jar"
+                        },
+                        {
+                            "name" : "log4j",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/bf945d1dc995be7fe64923625f842fbb6bf443be/log4j-1.2.16-sources.jar"
                         }
                     ]
                 },
@@ -802,18 +821,18 @@
                     ]
                 },
                 {
-                    "organization" : "junit",
-                    "name" : "junit",
-                    "version" : "4.13-beta-2",
+                    "organization" : "org.xerial.snappy",
+                    "name" : "snappy-java",
+                    "version" : "1.1.2.6",
                     "artifacts" : [
                         {
-                            "name" : "junit",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/junit/junit/4.13-beta-2/2470c41ebd351f7edceac9eea7c414ac847a154/junit-4.13-beta-2.jar"
+                            "name" : "snappy-java",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.2.6/48d92871ca286a47f230feb375f0bbffa83b85f6/snappy-java-1.1.2.6.jar"
                         },
                         {
-                            "name" : "junit",
+                            "name" : "snappy-java",
                             "classifier" : "sources",
-                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/junit/junit/4.13-beta-2/82aeb67084890746098fe1319eef2fe8c65dd67a/junit-4.13-beta-2-sources.jar"
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.2.6/f543a32717f60ed313f57ae746d93499298bb71/snappy-java-1.1.2.6-sources.jar"
                         }
                     ]
                 }

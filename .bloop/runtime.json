@@ -1,0 +1,1937 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "runtime",
+        "directory" : "/Users/m/code/bigdata/kafka/kafka/connect/runtime",
+        "sources" : [
+            "/Users/m/code/bigdata/kafka/kafka/connect/runtime/src/main/java"
+        ],
+        "dependencies" : [
+            "transforms",
+            "json",
+            "tools",
+            "api",
+            "clients"
+        ],
+        "classpath" : [
+            "/Users/m/code/bigdata/kafka/kafka/.bloop/json/build/classes",
+            "/Users/m/code/bigdata/kafka/kafka/.bloop/transforms/build/classes",
+            "/Users/m/code/bigdata/kafka/kafka/.bloop/api/build/classes",
+            "/Users/m/code/bigdata/kafka/kafka/.bloop/tools/build/classes",
+            "/Users/m/code/bigdata/kafka/kafka/.bloop/log4j-appender/build/classes",
+            "/Users/m/code/bigdata/kafka/kafka/.bloop/clients/build/classes",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.26/12f5c685b71c3027fd28bcf90528ec4ec74bf818/slf4j-log4j12-1.7.26.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.9.9/7deb5d0d335265ace2a9048c8d6e203b588a1724/jackson-jaxrs-json-provider-2.9.9.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.28/3b77ac98ef980f4f57779a7edbbd5622f86dfc7b/jersey-container-servlet-2.28.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-hk2/2.28/34903847d20c2833e1699dccd87bfab5d9fde9ed/jersey-hk2-2.28.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.0/99f802e0cb3e953ba3d6e698795c4aeb98d37c48/jaxb-api-2.3.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1.1/485de3a253e23f645037828c07f1d7f1af40763a/activation-1.1.1.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.18.v20190429/290f7a88f351950d51ebc9fb4a794752c62d7de5/jetty-servlet-9.4.18.v20190429.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.18.v20190429/1aceff3608ca1b223bfd275a497797cfe675ef4/jetty-security-9.4.18.v20190429.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.18.v20190429/b76ef50e04635f11d4d43bc6ccb7c4482a8384f0/jetty-server-9.4.18.v20190429.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.18.v20190429/e5d174950a44c8f93e27cc2528eff5a6b55da2f3/jetty-servlets-9.4.18.v20190429.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.18.v20190429/e5d7bd53f2f3ae46354efa56beca2dc505258e92/jetty-client-9.4.18.v20190429.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.11/4c686033d918ec1727e329b7222fcb020152e32b/reflections-0.9.11.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.6.1/4603471881d2f033b80c13ada7a31f56df7435e5/maven-artifact-3.6.1.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/d3466bc9321fe84f268a1adb3b90373fc14b0eb5/javax.ws.rs-api-2.1.1.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.4.0-1/8cc7f9b0f2bd53ef3bd0e38fccc678691f983474/zstd-jni-1.4.0-1.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.6.0/b49e2b422a5b7145ba7aa0c3f60c13664a5c5acf/lz4-java-1.6.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.7.3/241bb74a1eb37d68a4e324a4bc3865427de0a62d/snappy-java-1.1.7.3.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/6f0621d0c3888de39e0f06d01f37ba53a798e657/argparse4j-0.7.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.9/4b04126963103216c9c43b0f34bbc36315654204/jackson-datatype-jdk8-2.9.9.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.9.9/fc33bfa121b746db0f9fb8f36ed2e6682a1c1dd0/jackson-jaxrs-base-2.9.9.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.9.9/52fb643de81a60839750013a520f26b6259ddeff/jackson-module-jaxb-annotations-2.9.9.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.9/d6eb9817d9c7289a91f043ac5ee02a6b3cc86238/jackson-databind-2.9.9.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.28/35fffcabd4be102800ee788f7809c7c713620d61/jersey-container-servlet-core-2.28.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.28/bc94aedb9d4d82bd23f8b78a345868b11f52abb9/jersey-server-2.28.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.28/cdde34d5980fa498a922a310140e0dd0a69c2e67/jersey-client-2.28.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.28/dcd803fe1c19467c913a2638a6635d4915695867/jersey-media-jaxb-2.28.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.28/ec54308041b593386edf8eb505146907dbdc88e6/jersey-common-2.28.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.5/e45d7f94d7406489755d911e63c216b4a3210374/jakarta.ws.rs-api-2.1.5.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.5.0/4a0921428fef1e691cb9df035d44608b21af95a7/hk2-locator-2.5.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.18.v20190429/c2e73db2db5c369326b717da71b6587b3da11e0e/jetty-http-9.4.18.v20190429.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.18.v20190429/844af5efe58ab23fd0166a796efef123f4cb06b0/jetty-io-9.4.18.v20190429.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.18.v20190429/3c421a3be5be5805e32b1a7f9c6046526524181d/jetty-continuation-9.4.18.v20190429.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.18.v20190429/13e6148bfda7ae511f69ae7e5e3ea898bc9b0e33/jetty-util-9.4.18.v20190429.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.22.0-CR2/44eaf0990dea92f4bca4b9931b2239c0e8756ee7/javassist-3.22.0-CR2.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.2.0/d69e11d69dfce0c964587ab97b559187b3c27a6f/plexus-utils-3.2.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/6505a72a097d9270f7a9e7bf42c4238283247755/commons-lang3-3.8.1.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.9/bfff5af9fb8347d26bbb7959cb9b4fe9a2b0ca5e/jackson-core-2.9.9.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.5.0/4620ab411f8225cbf6f89fedf67634bb2277d209/hk2-api-2.5.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.5.0/695d0a3aeb28db5cf42ae4d456f1b605bd0f3d0f/hk2-utils-2.5.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/jakarta.inject/2.5.0/8f99415464ec2dd6afbdd4e9db9249c993065150/jakarta.inject-2.5.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.4/a858ec3f0ebd2b8d855c1ddded2cde9b381b0517/jakarta.annotation-api-1.3.4.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.1/4ed2b2d4738aed5786cfa64cba5a332779c4c708/osgi-resource-locator-1.0.1.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.5.0/2fa68c05f54f1bba9559dd571eb81959081f1895/aopalliance-repackaged-2.5.0.jar",
+            "/Users/m/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar"
+        ],
+        "out" : "/Users/m/code/bigdata/kafka/kafka/connect/runtime/build",
+        "classesDir" : "/Users/m/code/bigdata/kafka/kafka/.bloop/runtime/build/classes",
+        "resources" : [
+            "/Users/m/code/bigdata/kafka/kafka/connect/runtime/src/main/resources"
+        ],
+        "java" : {
+            "options" : [
+                "-target",
+                "1.8",
+                "-source",
+                "1.8",
+                "-encoding",
+                "UTF-8",
+                "-g",
+                "-sourcepath",
+                "-proc:none",
+                "-XDuseUnsharedTable=true",
+                "-Xlint:all",
+                "-Xlint:-rawtypes",
+                "-Xlint:-serial",
+                "-Xlint:-try",
+                "-Werror"
+            ]
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.slf4j",
+                    "name" : "slf4j-log4j12",
+                    "version" : "1.7.26",
+                    "artifacts" : [
+                        {
+                            "name" : "slf4j-log4j12",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.26/12f5c685b71c3027fd28bcf90528ec4ec74bf818/slf4j-log4j12-1.7.26.jar"
+                        },
+                        {
+                            "name" : "slf4j-log4j12",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.26/ed14c4a786ee8cf8d0b0a39da0f5a8f766de5598/slf4j-log4j12-1.7.26-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.slf4j",
+                    "name" : "slf4j-api",
+                    "version" : "1.7.26",
+                    "artifacts" : [
+                        {
+                            "name" : "slf4j-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar"
+                        },
+                        {
+                            "name" : "slf4j-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/21c84cdf9da108216b5e402611d4af479b60cb8/slf4j-api-1.7.26-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.jaxrs",
+                    "name" : "jackson-jaxrs-json-provider",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-jaxrs-json-provider",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.9.9/7deb5d0d335265ace2a9048c8d6e203b588a1724/jackson-jaxrs-json-provider-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-jaxrs-json-provider",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.9.9/c46a1de3f7ef6e18a208ba339dcacb9a990ea82/jackson-jaxrs-json-provider-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.containers",
+                    "name" : "jersey-container-servlet",
+                    "version" : "2.28",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-container-servlet",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.28/3b77ac98ef980f4f57779a7edbbd5622f86dfc7b/jersey-container-servlet-2.28.jar"
+                        },
+                        {
+                            "name" : "jersey-container-servlet",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.28/226c71d1871eae216315b55c637e389c9b0ba47c/jersey-container-servlet-2.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.inject",
+                    "name" : "jersey-hk2",
+                    "version" : "2.28",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-hk2",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-hk2/2.28/34903847d20c2833e1699dccd87bfab5d9fde9ed/jersey-hk2-2.28.jar"
+                        },
+                        {
+                            "name" : "jersey-hk2",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-hk2/2.28/c434c9a57c2efc716fee791c6a60cf0e8f1bd71/jersey-hk2-2.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.xml.bind",
+                    "name" : "jaxb-api",
+                    "version" : "2.3.0",
+                    "artifacts" : [
+                        {
+                            "name" : "jaxb-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.0/99f802e0cb3e953ba3d6e698795c4aeb98d37c48/jaxb-api-2.3.0.jar"
+                        },
+                        {
+                            "name" : "jaxb-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.0/431dc11c8e5d8b9f5149be5757ef8e170fc6824a/jaxb-api-2.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.activation",
+                    "name" : "activation",
+                    "version" : "1.1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "activation",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1.1/485de3a253e23f645037828c07f1d7f1af40763a/activation-1.1.1.jar"
+                        },
+                        {
+                            "name" : "activation",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1.1/159e45688875fdabff19c9ceb7335aefe4df8339/activation-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.eclipse.jetty",
+                    "name" : "jetty-servlet",
+                    "version" : "9.4.18.v20190429",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-servlet",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.18.v20190429/290f7a88f351950d51ebc9fb4a794752c62d7de5/jetty-servlet-9.4.18.v20190429.jar"
+                        },
+                        {
+                            "name" : "jetty-servlet",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.18.v20190429/6743abcc68181f6eac32a201feee89bc1793975e/jetty-servlet-9.4.18.v20190429-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.eclipse.jetty",
+                    "name" : "jetty-security",
+                    "version" : "9.4.18.v20190429",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-security",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.18.v20190429/1aceff3608ca1b223bfd275a497797cfe675ef4/jetty-security-9.4.18.v20190429.jar"
+                        },
+                        {
+                            "name" : "jetty-security",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.18.v20190429/344649fb61358872fc4e6ff84053f8965366815/jetty-security-9.4.18.v20190429-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.eclipse.jetty",
+                    "name" : "jetty-server",
+                    "version" : "9.4.18.v20190429",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-server",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.18.v20190429/b76ef50e04635f11d4d43bc6ccb7c4482a8384f0/jetty-server-9.4.18.v20190429.jar"
+                        },
+                        {
+                            "name" : "jetty-server",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.18.v20190429/80641dd32ea07a9e26681973a8fd49510d1ce954/jetty-server-9.4.18.v20190429-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.eclipse.jetty",
+                    "name" : "jetty-servlets",
+                    "version" : "9.4.18.v20190429",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-servlets",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.18.v20190429/e5d174950a44c8f93e27cc2528eff5a6b55da2f3/jetty-servlets-9.4.18.v20190429.jar"
+                        },
+                        {
+                            "name" : "jetty-servlets",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlets/9.4.18.v20190429/3ec1448db48878e3de85da744017db307531734c/jetty-servlets-9.4.18.v20190429-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.eclipse.jetty",
+                    "name" : "jetty-client",
+                    "version" : "9.4.18.v20190429",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-client",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.18.v20190429/e5d7bd53f2f3ae46354efa56beca2dc505258e92/jetty-client-9.4.18.v20190429.jar"
+                        },
+                        {
+                            "name" : "jetty-client",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-client/9.4.18.v20190429/2c81eebbaf3ebdd00c80c9364f7ec22208d5f93f/jetty-client-9.4.18.v20190429-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.reflections",
+                    "name" : "reflections",
+                    "version" : "0.9.11",
+                    "artifacts" : [
+                        {
+                            "name" : "reflections",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.11/4c686033d918ec1727e329b7222fcb020152e32b/reflections-0.9.11.jar"
+                        },
+                        {
+                            "name" : "reflections",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.9.11/2398090ad4dcba954285f97acef10e92e0260044/reflections-0.9.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.maven",
+                    "name" : "maven-artifact",
+                    "version" : "3.6.1",
+                    "artifacts" : [
+                        {
+                            "name" : "maven-artifact",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.6.1/4603471881d2f033b80c13ada7a31f56df7435e5/maven-artifact-3.6.1.jar"
+                        },
+                        {
+                            "name" : "maven-artifact",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.6.1/e490b86179c144e73e8b0015fed5113fd77dedfb/maven-artifact-3.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.ws.rs",
+                    "name" : "javax.ws.rs-api",
+                    "version" : "2.1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "javax.ws.rs-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/d3466bc9321fe84f268a1adb3b90373fc14b0eb5/javax.ws.rs-api-2.1.1.jar"
+                        },
+                        {
+                            "name" : "javax.ws.rs-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.1.1/c8cd68f41c63e60c89321caa95513376aace6711/javax.ws.rs-api-2.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.luben",
+                    "name" : "zstd-jni",
+                    "version" : "1.4.0-1",
+                    "artifacts" : [
+                        {
+                            "name" : "zstd-jni",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.4.0-1/8cc7f9b0f2bd53ef3bd0e38fccc678691f983474/zstd-jni-1.4.0-1.jar"
+                        },
+                        {
+                            "name" : "zstd-jni",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.luben/zstd-jni/1.4.0-1/613644b5d81071cc72f52b984500034165a982a4/zstd-jni-1.4.0-1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.lz4",
+                    "name" : "lz4-java",
+                    "version" : "1.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "lz4-java",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.6.0/b49e2b422a5b7145ba7aa0c3f60c13664a5c5acf/lz4-java-1.6.0.jar"
+                        },
+                        {
+                            "name" : "lz4-java",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.lz4/lz4-java/1.6.0/f70c1919da33149ca0dc1a3ab7bd99e332d7830d/lz4-java-1.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.xerial.snappy",
+                    "name" : "snappy-java",
+                    "version" : "1.1.7.3",
+                    "artifacts" : [
+                        {
+                            "name" : "snappy-java",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.7.3/241bb74a1eb37d68a4e324a4bc3865427de0a62d/snappy-java-1.1.7.3.jar"
+                        },
+                        {
+                            "name" : "snappy-java",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.1.7.3/83002a7c6641e17c16ecfad3342fb8e22033b775/snappy-java-1.1.7.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "net.sourceforge.argparse4j",
+                    "name" : "argparse4j",
+                    "version" : "0.7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "argparse4j",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/6f0621d0c3888de39e0f06d01f37ba53a798e657/argparse4j-0.7.0.jar"
+                        },
+                        {
+                            "name" : "argparse4j",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.sourceforge.argparse4j/argparse4j/0.7.0/dc5e5b48261b5eb12c2804561a98f1fbc287bc07/argparse4j-0.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.datatype",
+                    "name" : "jackson-datatype-jdk8",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-datatype-jdk8",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.9/4b04126963103216c9c43b0f34bbc36315654204/jackson-datatype-jdk8-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-datatype-jdk8",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.9/dd2a21d5d75b2ac56da7508780c8acf88b727d15/jackson-datatype-jdk8-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.jaxrs",
+                    "name" : "jackson-jaxrs-base",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-jaxrs-base",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.9.9/fc33bfa121b746db0f9fb8f36ed2e6682a1c1dd0/jackson-jaxrs-base-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-jaxrs-base",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.9.9/3e2d06d988d7131fc43e077284d7fd615f554604/jackson-jaxrs-base-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.module",
+                    "name" : "jackson-module-jaxb-annotations",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-module-jaxb-annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.9.9/52fb643de81a60839750013a520f26b6259ddeff/jackson-module-jaxb-annotations-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-module-jaxb-annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.9.9/e721989939fbc0ea30316bbb32948752022797e9/jackson-module-jaxb-annotations-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-databind",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-databind",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.9/d6eb9817d9c7289a91f043ac5ee02a6b3cc86238/jackson-databind-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-databind",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.9/8b717e1bc24a642cee070ae3860f04eb20c92779/jackson-databind-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.containers",
+                    "name" : "jersey-container-servlet-core",
+                    "version" : "2.28",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-container-servlet-core",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.28/35fffcabd4be102800ee788f7809c7c713620d61/jersey-container-servlet-core-2.28.jar"
+                        },
+                        {
+                            "name" : "jersey-container-servlet-core",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.28/e8902749b3899ec500dc4a9f06ae0597a8999fdb/jersey-container-servlet-core-2.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.core",
+                    "name" : "jersey-server",
+                    "version" : "2.28",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-server",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.28/bc94aedb9d4d82bd23f8b78a345868b11f52abb9/jersey-server-2.28.jar"
+                        },
+                        {
+                            "name" : "jersey-server",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.28/292e93ba8f847121f2e5e3db839baf25e95941ee/jersey-server-2.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.core",
+                    "name" : "jersey-client",
+                    "version" : "2.28",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-client",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.28/cdde34d5980fa498a922a310140e0dd0a69c2e67/jersey-client-2.28.jar"
+                        },
+                        {
+                            "name" : "jersey-client",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.28/b7a5c8578ec693c558f5ed988e7931df51c18a75/jersey-client-2.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.media",
+                    "name" : "jersey-media-jaxb",
+                    "version" : "2.28",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-media-jaxb",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.28/dcd803fe1c19467c913a2638a6635d4915695867/jersey-media-jaxb-2.28.jar"
+                        },
+                        {
+                            "name" : "jersey-media-jaxb",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.28/63173d3595bc9a8a95892cad78b4217f7368c0ef/jersey-media-jaxb-2.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.core",
+                    "name" : "jersey-common",
+                    "version" : "2.28",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-common",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.28/ec54308041b593386edf8eb505146907dbdc88e6/jersey-common-2.28.jar"
+                        },
+                        {
+                            "name" : "jersey-common",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.28/5fa64f538d61d8af54acae8e3918befa58aecd78/jersey-common-2.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "jakarta.ws.rs",
+                    "name" : "jakarta.ws.rs-api",
+                    "version" : "2.1.5",
+                    "artifacts" : [
+                        {
+                            "name" : "jakarta.ws.rs-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.5/e45d7f94d7406489755d911e63c216b4a3210374/jakarta.ws.rs-api-2.1.5.jar"
+                        },
+                        {
+                            "name" : "jakarta.ws.rs-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/2.1.5/76d35c591d1b127b0523338cd7c490b7d2862305/jakarta.ws.rs-api-2.1.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2",
+                    "name" : "hk2-locator",
+                    "version" : "2.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "hk2-locator",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.5.0/4a0921428fef1e691cb9df035d44608b21af95a7/hk2-locator-2.5.0.jar"
+                        },
+                        {
+                            "name" : "hk2-locator",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.5.0/4816d53cfe96951bf7d858e3171244c5287a4a6e/hk2-locator-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.servlet",
+                    "name" : "javax.servlet-api",
+                    "version" : "3.1.0",
+                    "artifacts" : [
+                        {
+                            "name" : "javax.servlet-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar"
+                        },
+                        {
+                            "name" : "javax.servlet-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.eclipse.jetty",
+                    "name" : "jetty-http",
+                    "version" : "9.4.18.v20190429",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-http",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.18.v20190429/c2e73db2db5c369326b717da71b6587b3da11e0e/jetty-http-9.4.18.v20190429.jar"
+                        },
+                        {
+                            "name" : "jetty-http",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.18.v20190429/cca828fbfd8b8e1d99ee6157305240e57732fc3e/jetty-http-9.4.18.v20190429-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.eclipse.jetty",
+                    "name" : "jetty-io",
+                    "version" : "9.4.18.v20190429",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-io",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.18.v20190429/844af5efe58ab23fd0166a796efef123f4cb06b0/jetty-io-9.4.18.v20190429.jar"
+                        },
+                        {
+                            "name" : "jetty-io",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.18.v20190429/baf5a547aebf723fc109aa907e6dc391245dae93/jetty-io-9.4.18.v20190429-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.eclipse.jetty",
+                    "name" : "jetty-continuation",
+                    "version" : "9.4.18.v20190429",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-continuation",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.18.v20190429/3c421a3be5be5805e32b1a7f9c6046526524181d/jetty-continuation-9.4.18.v20190429.jar"
+                        },
+                        {
+                            "name" : "jetty-continuation",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-continuation/9.4.18.v20190429/a619379367f1fa58e4436d17b3d370fd08248b08/jetty-continuation-9.4.18.v20190429-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.eclipse.jetty",
+                    "name" : "jetty-util",
+                    "version" : "9.4.18.v20190429",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-util",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.18.v20190429/13e6148bfda7ae511f69ae7e5e3ea898bc9b0e33/jetty-util-9.4.18.v20190429.jar"
+                        },
+                        {
+                            "name" : "jetty-util",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.18.v20190429/f0822d1e912d41d966e23b57b08d66357f5d2614/jetty-util-9.4.18.v20190429-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.guava",
+                    "name" : "guava",
+                    "version" : "20.0",
+                    "artifacts" : [
+                        {
+                            "name" : "guava",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar"
+                        },
+                        {
+                            "name" : "guava",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/9c8493c7991464839b612d7547d6c263adf08f75/guava-20.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.javassist",
+                    "name" : "javassist",
+                    "version" : "3.22.0-CR2",
+                    "artifacts" : [
+                        {
+                            "name" : "javassist",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.22.0-CR2/44eaf0990dea92f4bca4b9931b2239c0e8756ee7/javassist-3.22.0-CR2.jar"
+                        },
+                        {
+                            "name" : "javassist",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.22.0-CR2/4f13d1396cfd22872c98f57fb9c0a7a74febbb05/javassist-3.22.0-CR2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.codehaus.plexus",
+                    "name" : "plexus-utils",
+                    "version" : "3.2.0",
+                    "artifacts" : [
+                        {
+                            "name" : "plexus-utils",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.2.0/d69e11d69dfce0c964587ab97b559187b3c27a6f/plexus-utils-3.2.0.jar"
+                        },
+                        {
+                            "name" : "plexus-utils",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.2.0/d77324130d7dcf05bafcb7bdd8f679b081dd2421/plexus-utils-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.commons",
+                    "name" : "commons-lang3",
+                    "version" : "3.8.1",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-lang3",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/6505a72a097d9270f7a9e7bf42c4238283247755/commons-lang3-3.8.1.jar"
+                        },
+                        {
+                            "name" : "commons-lang3",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/e9748d7783594da3735ad9724390a10e7cebc01d/commons-lang3-3.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-annotations",
+                    "version" : "2.9.0",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar"
+                        },
+                        {
+                            "name" : "jackson-annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/a0ad4e203304ccab7e01266fa814115850edb8a9/jackson-annotations-2.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-core",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-core",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.9/bfff5af9fb8347d26bbb7959cb9b4fe9a2b0ca5e/jackson-core-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-core",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.9/c8a91180aef81d62f44b27cef42bacb168871a4c/jackson-core-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2",
+                    "name" : "hk2-api",
+                    "version" : "2.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "hk2-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.5.0/4620ab411f8225cbf6f89fedf67634bb2277d209/hk2-api-2.5.0.jar"
+                        },
+                        {
+                            "name" : "hk2-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.5.0/f95c81ef8a6a1f3cac07592937aa2dae3802a97a/hk2-api-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2",
+                    "name" : "hk2-utils",
+                    "version" : "2.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "hk2-utils",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.5.0/695d0a3aeb28db5cf42ae4d456f1b605bd0f3d0f/hk2-utils-2.5.0.jar"
+                        },
+                        {
+                            "name" : "hk2-utils",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.5.0/9077aa211aefd79f59c02bb3fcd37fa153daca46/hk2-utils-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2.external",
+                    "name" : "jakarta.inject",
+                    "version" : "2.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "jakarta.inject",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/jakarta.inject/2.5.0/8f99415464ec2dd6afbdd4e9db9249c993065150/jakarta.inject-2.5.0.jar"
+                        },
+                        {
+                            "name" : "jakarta.inject",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/jakarta.inject/2.5.0/af4b2a0a7874587570a8d8d802cab0e750b0be4d/jakarta.inject-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "jakarta.annotation",
+                    "name" : "jakarta.annotation-api",
+                    "version" : "1.3.4",
+                    "artifacts" : [
+                        {
+                            "name" : "jakarta.annotation-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.4/a858ec3f0ebd2b8d855c1ddded2cde9b381b0517/jakarta.annotation-api-1.3.4.jar"
+                        },
+                        {
+                            "name" : "jakarta.annotation-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.4/66d2547b0bb966feea13a648c745fbf3a44bb7c3/jakarta.annotation-api-1.3.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2",
+                    "name" : "osgi-resource-locator",
+                    "version" : "1.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "osgi-resource-locator",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.1/4ed2b2d4738aed5786cfa64cba5a332779c4c708/osgi-resource-locator-1.0.1.jar"
+                        },
+                        {
+                            "name" : "osgi-resource-locator",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.1/b5685f8eaa7d83351b185a82a92abcd1b8b87fc8/osgi-resource-locator-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.validation",
+                    "name" : "validation-api",
+                    "version" : "2.0.1.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "validation-api",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar"
+                        },
+                        {
+                            "name" : "validation-api",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/4b714a5167580122e46ead3317ffcdcdbd67c5f0/validation-api-2.0.1.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2.external",
+                    "name" : "aopalliance-repackaged",
+                    "version" : "2.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "aopalliance-repackaged",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.5.0/2fa68c05f54f1bba9559dd571eb81959081f1895/aopalliance-repackaged-2.5.0.jar"
+                        },
+                        {
+                            "name" : "aopalliance-repackaged",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.5.0/86c76a94c9479f7e3c1c3ad033340220fc3d0690/aopalliance-repackaged-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "log4j",
+                    "name" : "log4j",
+                    "version" : "1.2.17",
+                    "artifacts" : [
+                        {
+                            "name" : "log4j",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar"
+                        },
+                        {
+                            "name" : "log4j",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-beanutils",
+                    "name" : "commons-beanutils",
+                    "version" : "1.9.3",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-beanutils",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.3/c845703de334ddc6b4b3cd26835458cb1cba1f3d/commons-beanutils-1.9.3.jar"
+                        },
+                        {
+                            "name" : "commons-beanutils",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.3/9d70af7c5982bd09c33efa97ac98cee6363ba0f0/commons-beanutils-1.9.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.jacoco",
+                    "name" : "org.jacoco.report",
+                    "version" : "0.8.3",
+                    "artifacts" : [
+                        {
+                            "name" : "org.jacoco.report",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.report/0.8.3/5f60af9b535789ce777834fe548bee6a85a11605/org.jacoco.report-0.8.3.jar"
+                        },
+                        {
+                            "name" : "org.jacoco.report",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.report/0.8.3/52ace7843d42ba9bc1958becfc25484c8a2ff809/org.jacoco.report-0.8.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.zookeeper",
+                    "name" : "zookeeper",
+                    "version" : "3.4.14",
+                    "artifacts" : [
+                        {
+                            "name" : "zookeeper",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.14/c114c1e1c8172a7cd3f6ae39209a635f7a06c1a1/zookeeper-3.4.14.jar"
+                        },
+                        {
+                            "name" : "zookeeper",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.14/997b3bf1bbe2fd61c8bbc97fdcbf588165dc7d0b/zookeeper-3.4.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.powermock",
+                    "name" : "powermock-module-junit4",
+                    "version" : "2.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "powermock-module-junit4",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4/2.0.2/5b29faa1283332f1368cfa87d688e47ae75b7368/powermock-module-junit4-2.0.2.jar"
+                        },
+                        {
+                            "name" : "powermock-module-junit4",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4/2.0.2/1fc6859e6daa6fb5401376c951f006a7b57d9207/powermock-module-junit4-2.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.guava",
+                    "name" : "failureaccess",
+                    "version" : "1.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "failureaccess",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar"
+                        },
+                        {
+                            "name" : "failureaccess",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1d064e61aad6c51cc77f9b59dc2cccc78e792f5a/failureaccess-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.ow2.asm",
+                    "name" : "asm-analysis",
+                    "version" : "7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "asm-analysis",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/7.0/4b310d20d6f1c6b7197a75f1b5d69f169bc8ac1f/asm-analysis-7.0.jar"
+                        },
+                        {
+                            "name" : "asm-analysis",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/7.0/70608c6f4ee3c2073ccd43f1e4a359783334f86f/asm-analysis-7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.checkerframework",
+                    "name" : "checker-qual",
+                    "version" : "2.5.2",
+                    "artifacts" : [
+                        {
+                            "name" : "checker-qual",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.5.2/cea74543d5904a30861a61b4643a5f2bb372efc4/checker-qual-2.5.2.jar"
+                        },
+                        {
+                            "name" : "checker-qual",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.5.2/ebb8ebccd42218434674f3e1d9022c13df1c19f8/checker-qual-2.5.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.spotbugs",
+                    "name" : "spotbugs",
+                    "version" : "3.1.12",
+                    "artifacts" : [
+                        {
+                            "name" : "spotbugs",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs/3.1.12/f44d1e64d96d683cc930622f1cc23b87a0bcd299/spotbugs-3.1.12.jar"
+                        },
+                        {
+                            "name" : "spotbugs",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs/3.1.12/6a6959bff8e8f110ae4e409d4290da4a9dfeaea3/spotbugs-3.1.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.guava",
+                    "name" : "guava",
+                    "version" : "27.1-jre",
+                    "artifacts" : [
+                        {
+                            "name" : "guava",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/27.1-jre/e47b59c893079b87743cdcfb6f17ca95c08c592c/guava-27.1-jre.jar"
+                        },
+                        {
+                            "name" : "guava",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/27.1-jre/5dfa313690a903560bf27478345780a607bf1e9b/guava-27.1-jre-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.powermock",
+                    "name" : "powermock-module-junit4-common",
+                    "version" : "2.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "powermock-module-junit4-common",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4-common/2.0.2/1a2c7b5533a4e938b94df4da704ff997fe7a308d/powermock-module-junit4-common-2.0.2.jar"
+                        },
+                        {
+                            "name" : "powermock-module-junit4-common",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4-common/2.0.2/d005721a894a4453904c6f98612caa123528b71f/powermock-module-junit4-common-2.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.objenesis",
+                    "name" : "objenesis",
+                    "version" : "3.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "objenesis",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.0.1/11cfac598df9dc48bb9ed9357ed04212694b7808/objenesis-3.0.1.jar"
+                        },
+                        {
+                            "name" : "objenesis",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.0.1/4aaa3e228e1ae7c71ded703b8742c37c058057fd/objenesis-3.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "info.picocli",
+                    "name" : "picocli",
+                    "version" : "3.9.6",
+                    "artifacts" : [
+                        {
+                            "name" : "picocli",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/info.picocli/picocli/3.9.6/3638cf9e990d401b0ab6167a360649707a678a18/picocli-3.9.6.jar"
+                        },
+                        {
+                            "name" : "picocli",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/info.picocli/picocli/3.9.6/672fccbd1b412ebaf5ac33da5d15c561b5471cbd/picocli-3.9.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.powermock",
+                    "name" : "powermock-api-support",
+                    "version" : "2.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "powermock-api-support",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-support/2.0.2/609f2960a138e376df8700fa44e26cabfe960f45/powermock-api-support-2.0.2.jar"
+                        },
+                        {
+                            "name" : "powermock-api-support",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-support/2.0.2/e240628066ac04cd43f4708ef148c73b4a995a52/powermock-api-support-2.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.thoughtworks.paranamer",
+                    "name" : "paranamer",
+                    "version" : "2.8",
+                    "artifacts" : [
+                        {
+                            "name" : "paranamer",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/619eba74c19ccf1da8ebec97a2d7f8ba05773dd6/paranamer-2.8.jar"
+                        },
+                        {
+                            "name" : "paranamer",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/8f3421a8203053a6ab4b74f76a0550d21eee8cfe/paranamer-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.easymock",
+                    "name" : "easymock",
+                    "version" : "4.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "easymock",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.easymock/easymock/4.0.2/f74aebbe02f5051bea31c0dbc5df5202a59e0b78/easymock-4.0.2.jar"
+                        },
+                        {
+                            "name" : "easymock",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.easymock/easymock/4.0.2/28bcf4c1eb3544a3ade21ec5b644ed89a3734450/easymock-4.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-collections",
+                    "name" : "commons-collections",
+                    "version" : "3.2.2",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-collections",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar"
+                        },
+                        {
+                            "name" : "commons-collections",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.scala-logging",
+                    "name" : "scala-logging_2.12",
+                    "version" : "3.9.0",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-logging_2.12",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.12/3.9.0/b6c6bb584f3e5c2d3f20aa7c8ff3e6959870b13c/scala-logging_2.12-3.9.0.jar"
+                        },
+                        {
+                            "name" : "scala-logging_2.12",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.12/3.9.0/91387647fa19f1db2adf8c3aee8a3c0dee5d7aa7/scala-logging_2.12-3.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.dataformat",
+                    "name" : "jackson-dataformat-csv",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-dataformat-csv",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-csv/2.9.9/32130e6ec2c9116e3a03a92a4c04f46c5c0ffe03/jackson-dataformat-csv-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-dataformat-csv",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-csv/2.9.9/3d8ef9c925ba0f54c7f09d03cd4c1d84d979496e/jackson-dataformat-csv-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-logging",
+                    "name" : "commons-logging",
+                    "version" : "1.2",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-logging",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar"
+                        },
+                        {
+                            "name" : "commons-logging",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.powermock",
+                    "name" : "powermock-api-easymock",
+                    "version" : "2.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "powermock-api-easymock",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-easymock/2.0.2/2f40f5319f9da2a6848cdd5fe2bfd834b76f0f46/powermock-api-easymock-2.0.2.jar"
+                        },
+                        {
+                            "name" : "powermock-api-easymock",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-easymock/2.0.2/6dd9be542c12d3fdf30c91e5bd2bcb93977d413a/powermock-api-easymock-2.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.module",
+                    "name" : "jackson-module-scala_2.12",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-module-scala_2.12",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.12/2.9.9/a2029daaea881bb310f04b3a95234e4148b18546/jackson-module-scala_2.12-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-module-scala_2.12",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.12/2.9.9/e5325479e14cefa79d17e4e50eca341be61baefd/jackson-module-scala_2.12-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.hamcrest",
+                    "name" : "hamcrest-core",
+                    "version" : "1.3",
+                    "artifacts" : [
+                        {
+                            "name" : "hamcrest-core",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"
+                        },
+                        {
+                            "name" : "hamcrest-core",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "antlr",
+                    "name" : "antlr",
+                    "version" : "2.7.7",
+                    "artifacts" : [
+                        {
+                            "name" : "antlr",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.httpcomponents",
+                    "name" : "httpclient",
+                    "version" : "4.5.8",
+                    "artifacts" : [
+                        {
+                            "name" : "httpclient",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.8/c27c9d6f15435dc2b6947112027b418b0eef32b9/httpclient-4.5.8.jar"
+                        },
+                        {
+                            "name" : "httpclient",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.8/585883960a4ff782ba1982a08649307c6cb2227b/httpclient-4.5.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.spotbugs",
+                    "name" : "spotbugs-annotations",
+                    "version" : "3.1.9",
+                    "artifacts" : [
+                        {
+                            "name" : "spotbugs-annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs-annotations/3.1.9/2ef5127efcc1a899aab8c66d449a631c9a99c469/spotbugs-annotations-3.1.9.jar"
+                        },
+                        {
+                            "name" : "spotbugs-annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs-annotations/3.1.9/6f3558917456604d0d70f416c4a834db8e579843/spotbugs-annotations-3.1.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-reflect",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-reflect",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.8/682d33402cdae50258afa2c0860eb54688dab610/scala-reflect-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-reflect",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.8/2b4a5bbdc19f8ab34d474f30dbca957addc8ae09/scala-reflect-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "cglib",
+                    "name" : "cglib-nodep",
+                    "version" : "3.2.9",
+                    "artifacts" : [
+                        {
+                            "name" : "cglib-nodep",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/3.2.9/27ca91ebc2b82f844e62a7ba8c2c1fdf9b84fa80/cglib-nodep-3.2.9.jar"
+                        },
+                        {
+                            "name" : "cglib-nodep",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/3.2.9/acf1e231e9966c63b40ac3747b1e805b01aeaf73/cglib-nodep-3.2.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.jacoco",
+                    "name" : "org.jacoco.core",
+                    "version" : "0.8.3",
+                    "artifacts" : [
+                        {
+                            "name" : "org.jacoco.core",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.core/0.8.3/79f84be0b764847df8652d2dca6f658ee5101f3e/org.jacoco.core-0.8.3.jar"
+                        },
+                        {
+                            "name" : "org.jacoco.core",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.core/0.8.3/369d145aa0a61fa101c06a6dc5dcf6864a4c7d7/org.jacoco.core-0.8.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.httpcomponents",
+                    "name" : "httpcore",
+                    "version" : "4.4.11",
+                    "artifacts" : [
+                        {
+                            "name" : "httpcore",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.11/de748cf874e4e193b42eceea9fe5574fabb9d4df/httpcore-4.4.11.jar"
+                        },
+                        {
+                            "name" : "httpcore",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.11/95167d269607b358ba3ed7030ccd336dad8591a0/httpcore-4.4.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-library",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/45ccb865e040cbef5d5620571527831441392f24/scala-library-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.guava",
+                    "name" : "listenablefuture",
+                    "version" : "9999.0-empty-to-avoid-conflict-with-guava",
+                    "artifacts" : [
+                        {
+                            "name" : "listenablefuture",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.codehaus.mojo",
+                    "name" : "animal-sniffer-annotations",
+                    "version" : "1.17",
+                    "artifacts" : [
+                        {
+                            "name" : "animal-sniffer-annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.17/f97ce6decaea32b36101e37979f8b647f00681fb/animal-sniffer-annotations-1.17.jar"
+                        },
+                        {
+                            "name" : "animal-sniffer-annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.17/8fb5b5ad9c9723951b9fccaba5bb657fa6064868/animal-sniffer-annotations-1.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.jacoco",
+                    "name" : "org.jacoco.agent",
+                    "version" : "0.8.3",
+                    "artifacts" : [
+                        {
+                            "name" : "org.jacoco.agent",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.agent/0.8.3/b2ab9a76ecf256e55046a3b3acc75c4dc406c3b6/org.jacoco.agent-0.8.3.jar"
+                        },
+                        {
+                            "name" : "org.jacoco.agent",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.agent/0.8.3/fc9e97a1f0b0a228c2d13c3efc6efc389d57b65d/org.jacoco.agent-0.8.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-codec",
+                    "name" : "commons-codec",
+                    "version" : "1.11",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-codec",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.11/3acb4705652e16236558f0f4f2192cc33c3bd189/commons-codec-1.11.jar"
+                        },
+                        {
+                            "name" : "commons-codec",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.11/bce4ba84fd527950e35040b20a991c63e90e2850/commons-codec-1.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.yetus",
+                    "name" : "audience-annotations",
+                    "version" : "0.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "audience-annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/55762d3191a8d6610ef46d11e8cb70c7667342a3/audience-annotations-0.5.0.jar"
+                        },
+                        {
+                            "name" : "audience-annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.5.0/51aa3138d72781ef879e9cb660daab3ac7c52c60/audience-annotations-0.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.bcel",
+                    "name" : "bcel",
+                    "version" : "6.3",
+                    "artifacts" : [
+                        {
+                            "name" : "bcel",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.bcel/bcel/6.3/ab01e21304edb070aa840b856a4b26f17f901479/bcel-6.3.jar"
+                        },
+                        {
+                            "name" : "bcel",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.apache.bcel/bcel/6.3/b30e746bf950ad55ae1efafa603d3104913344ab/bcel-6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.ow2.asm",
+                    "name" : "asm-util",
+                    "version" : "7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "asm-util",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/7.0/18d4d07010c24405129a6dbb0e92057f8779fb9d/asm-util-7.0.jar"
+                        },
+                        {
+                            "name" : "asm-util",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/7.0/6274d34f71cc99df75ee96e7cdbc5adefa147997/asm-util-7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.101tec",
+                    "name" : "zkclient",
+                    "version" : "0.11",
+                    "artifacts" : [
+                        {
+                            "name" : "zkclient",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.101tec/zkclient/0.11/eac41195bbbd8af968e43a71bc774c31984da31e/zkclient-0.11.jar"
+                        },
+                        {
+                            "name" : "zkclient",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.101tec/zkclient/0.11/46c7fe340895b13843941c3f27d642f4715eccd4/zkclient-0.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.ow2.asm",
+                    "name" : "asm-tree",
+                    "version" : "7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "asm-tree",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/7.0/29bc62dcb85573af6e62e5b2d735ef65966c4180/asm-tree-7.0.jar"
+                        },
+                        {
+                            "name" : "asm-tree",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/7.0/6064bf57bbce12aebc8ab96f32efe3f1c6cdd5fc/asm-tree-7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.jacoco",
+                    "name" : "org.jacoco.ant",
+                    "version" : "0.8.3",
+                    "artifacts" : [
+                        {
+                            "name" : "org.jacoco.ant",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.ant/0.8.3/14590e772f3a89f922ebc5b115ccc75393c2df18/org.jacoco.ant-0.8.3.jar"
+                        },
+                        {
+                            "name" : "org.jacoco.ant",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.ant/0.8.3/b364ed98730da4b4989e00385a86dd1ebf8e491/org.jacoco.ant-0.8.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.code.findbugs",
+                    "name" : "jsr305",
+                    "version" : "3.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jsr305",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name" : "jsr305",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "net.jcip",
+                    "name" : "jcip-annotations",
+                    "version" : "1.0",
+                    "artifacts" : [
+                        {
+                            "name" : "jcip-annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.jcip/jcip-annotations/1.0/afba4942caaeaf46aab0b976afd57cc7c181467e/jcip-annotations-1.0.jar"
+                        },
+                        {
+                            "name" : "jcip-annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.jcip/jcip-annotations/1.0/d853625d8001c00d40abed553e670279504699f9/jcip-annotations-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.ibm.icu",
+                    "name" : "icu4j",
+                    "version" : "63.1",
+                    "artifacts" : [
+                        {
+                            "name" : "icu4j",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/63.1/385682b7fff53cd5ac2cad0fdb4658a7b97e9475/icu4j-63.1.jar"
+                        },
+                        {
+                            "name" : "icu4j",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/63.1/58ff12717b076430cbbce4708d024adbafdad5/icu4j-63.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "jaxen",
+                    "name" : "jaxen",
+                    "version" : "1.1.6",
+                    "artifacts" : [
+                        {
+                            "name" : "jaxen",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/jaxen/jaxen/1.1.6/3f8c36d9a0578e8e98f030c662b69888b1430ac0/jaxen-1.1.6.jar"
+                        },
+                        {
+                            "name" : "jaxen",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/jaxen/jaxen/1.1.6/7b58b090cb2f189344ee80ccc4cfbab29fdd6f56/jaxen-1.1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.spotbugs",
+                    "name" : "spotbugs-annotations",
+                    "version" : "3.1.12",
+                    "artifacts" : [
+                        {
+                            "name" : "spotbugs-annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs-annotations/3.1.12/ba2c77a05091820668987292f245f3b089387bfa/spotbugs-annotations-3.1.12.jar"
+                        },
+                        {
+                            "name" : "spotbugs-annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs-annotations/3.1.12/1d7b1099a4318469157e2172e0559ce0c5b2a85b/spotbugs-annotations-3.1.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.yammer.metrics",
+                    "name" : "metrics-core",
+                    "version" : "2.2.0",
+                    "artifacts" : [
+                        {
+                            "name" : "metrics-core",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/f82c035cfa786d3cbec362c38c22a5f5b1bc8724/metrics-core-2.2.0.jar"
+                        },
+                        {
+                            "name" : "metrics-core",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.yammer.metrics/metrics-core/2.2.0/6bdc9ec38b662632d7597d6f22942fb2dd2f5c4d/metrics-core-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "net.bytebuddy",
+                    "name" : "byte-buddy-agent",
+                    "version" : "1.9.10",
+                    "artifacts" : [
+                        {
+                            "name" : "byte-buddy-agent",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.9.10/9674aba5ee793e54b864952b001166848da0f26b/byte-buddy-agent-1.9.10.jar"
+                        },
+                        {
+                            "name" : "byte-buddy-agent",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.9.10/a00b33b443dc92a59ab01f21e37dd2aee07c4256/byte-buddy-agent-1.9.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.javassist",
+                    "name" : "javassist",
+                    "version" : "3.24.0-GA",
+                    "artifacts" : [
+                        {
+                            "name" : "javassist",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.24.0-GA/d7466fc2e3af7c023e95c510f06448ad29b225b3/javassist-3.24.0-GA.jar"
+                        },
+                        {
+                            "name" : "javassist",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.24.0-GA/88e88c8e043968bac9b2e86df5cb4a7c2b9f0023/javassist-3.24.0-GA-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.dom4j",
+                    "name" : "dom4j",
+                    "version" : "2.1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "dom4j",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.dom4j/dom4j/2.1.1/3dce5dbb3571aa820c677fadd8349bfa8f00c199/dom4j-2.1.1.jar"
+                        },
+                        {
+                            "name" : "dom4j",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.dom4j/dom4j/2.1.1/a474d56a9ff9ec5973268cb1e80ded8414ffdd40/dom4j-2.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.mockito",
+                    "name" : "mockito-core",
+                    "version" : "2.27.0",
+                    "artifacts" : [
+                        {
+                            "name" : "mockito-core",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.27.0/835fc3283b481f4758b8ef464cd560c649c08b00/mockito-core-2.27.0.jar"
+                        },
+                        {
+                            "name" : "mockito-core",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.27.0/974e30db0821f8e799fed5d7c4a8e40066ad97dd/mockito-core-2.27.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.kafka",
+                    "name" : "kafka_2.12",
+                    "version" : "2.3.1-SNAPSHOT",
+                    "artifacts" : [
+                        {
+                            "name" : "core",
+                            "path" : "/Users/m/code/bigdata/kafka/kafka/core/build/libs/kafka_2.12-2.3.1-SNAPSHOT.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.ow2.asm",
+                    "name" : "asm-commons",
+                    "version" : "7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "asm-commons",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/7.0/478006d07b7c561ae3a92ddc1829bca81ae0cdd1/asm-commons-7.0.jar"
+                        },
+                        {
+                            "name" : "asm-commons",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/7.0/6a7ca89b189929d4eb4349c6f075fc345b055e0/asm-commons-7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.powermock",
+                    "name" : "powermock-reflect",
+                    "version" : "2.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "powermock-reflect",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-reflect/2.0.2/79df0e5792fba38278b90f9e22617f5684313017/powermock-reflect-2.0.2.jar"
+                        },
+                        {
+                            "name" : "powermock-reflect",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-reflect/2.0.2/9673d8488947e78b909c2b1e41980b9517252e66/powermock-reflect-2.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.ow2.asm",
+                    "name" : "asm",
+                    "version" : "7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "asm",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/7.0/d74d4ba0dee443f68fb2dcb7fcdb945a2cd89912/asm-7.0.jar"
+                        },
+                        {
+                            "name" : "asm",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/7.0/1e0eab03ec196dea229ea637e523b9c016e66b42/asm-7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.antlr",
+                    "name" : "antlr4-runtime",
+                    "version" : "4.7.2",
+                    "artifacts" : [
+                        {
+                            "name" : "antlr4-runtime",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.7.2/e27d8ab4f984f9d186f54da984a6ab1cccac755e/antlr4-runtime-4.7.2.jar"
+                        },
+                        {
+                            "name" : "antlr4-runtime",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.7.2/14fff5b9b6c84f3b3a1fe0980e8560a555df07c0/antlr4-runtime-4.7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.j2objc",
+                    "name" : "j2objc-annotations",
+                    "version" : "1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "j2objc-annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/ed28ded51a8b1c6b112568def5f4b455e6809019/j2objc-annotations-1.1.jar"
+                        },
+                        {
+                            "name" : "j2objc-annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/1efdf5b737b02f9b72ebdec4f72c37ec411302ff/j2objc-annotations-1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.puppycrawl.tools",
+                    "name" : "checkstyle",
+                    "version" : "8.20",
+                    "artifacts" : [
+                        {
+                            "name" : "checkstyle",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.puppycrawl.tools/checkstyle/8.20/56a6e77fab16cd315343b28d8fe5809d0a538f64/checkstyle-8.20.jar"
+                        },
+                        {
+                            "name" : "checkstyle",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.puppycrawl.tools/checkstyle/8.20/4fc83808f1d9055a6d49ab18e0a8507c1fe49a19/checkstyle-8.20-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.errorprone",
+                    "name" : "error_prone_annotations",
+                    "version" : "2.2.0",
+                    "artifacts" : [
+                        {
+                            "name" : "error_prone_annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/88e3c593e9b3586e1c6177f89267da6fc6986f0c/error_prone_annotations-2.2.0.jar"
+                        },
+                        {
+                            "name" : "error_prone_annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/a8cd7823aa1dcd2fd6677c0c5988fdde9d1fb0a3/error_prone_annotations-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-lang",
+                    "name" : "commons-lang",
+                    "version" : "2.6",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-lang",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar"
+                        },
+                        {
+                            "name" : "commons-lang",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/67313d715fbf0ea4fd0bdb69217fb77f807a8ce5/commons-lang-2.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "net.sf.jopt-simple",
+                    "name" : "jopt-simple",
+                    "version" : "5.0.4",
+                    "artifacts" : [
+                        {
+                            "name" : "jopt-simple",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar"
+                        },
+                        {
+                            "name" : "jopt-simple",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/950831646d014c9162999019a3cb17d5fc01ac0d/jopt-simple-5.0.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.module",
+                    "name" : "jackson-module-paranamer",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-module-paranamer",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-paranamer/2.9.9/a99b9809c0d45072ca9911eead00ecee946ba06a/jackson-module-paranamer-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-module-paranamer",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-paranamer/2.9.9/a591061598dd6472cb48b0321a1dab44af1e0f93/jackson-module-paranamer-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.powermock",
+                    "name" : "powermock-core",
+                    "version" : "2.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "powermock-core",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-core/2.0.2/d8b5e02b891e16d8be9e6d19bfeacc987168426d/powermock-core-2.0.2.jar"
+                        },
+                        {
+                            "name" : "powermock-core",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-core/2.0.2/e4876288008e82dfc909dd24d448b560b6d5671e/powermock-core-2.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "net.bytebuddy",
+                    "name" : "byte-buddy",
+                    "version" : "1.9.10",
+                    "artifacts" : [
+                        {
+                            "name" : "byte-buddy",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.9.10/211a2b4d3df1eeef2a6cacf78d74a1f725e7a840/byte-buddy-1.9.10.jar"
+                        },
+                        {
+                            "name" : "byte-buddy",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.9.10/4a97f2b09ac6a9966e3aaddb4362b81d795d250b/byte-buddy-1.9.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-annotations",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-annotations",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.9/2ea299c145207161c212e28abbc8f513fa245940/jackson-annotations-2.9.9.jar"
+                        },
+                        {
+                            "name" : "jackson-annotations",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.9/4ac77aa5799fcf00a9cde00cd7da4d08bdc038ff/jackson-annotations-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "net.sf.saxon",
+                    "name" : "Saxon-HE",
+                    "version" : "9.9.1-2",
+                    "artifacts" : [
+                        {
+                            "name" : "Saxon-HE",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.sf.saxon/Saxon-HE/9.9.1-2/2f7b0257a1b60990d1909f7fcd33739732dd2843/Saxon-HE-9.9.1-2.jar"
+                        },
+                        {
+                            "name" : "Saxon-HE",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/net.sf.saxon/Saxon-HE/9.9.1-2/39489dffc88170483758c902e1c2e8ac72276c2d/Saxon-HE-9.9.1-2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "junit",
+                    "name" : "junit",
+                    "version" : "4.13-beta-2",
+                    "artifacts" : [
+                        {
+                            "name" : "junit",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/junit/junit/4.13-beta-2/2470c41ebd351f7edceac9eea7c414ac847a154/junit-4.13-beta-2.jar"
+                        },
+                        {
+                            "name" : "junit",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.gradle/caches/modules-2/files-2.1/junit/junit/4.13-beta-2/82aeb67084890746098fe1319eef2fe8c65dd67a/junit-4.13-beta-2-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

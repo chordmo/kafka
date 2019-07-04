@@ -2,6 +2,7 @@
     cd kafka_source_dir
     gradle
     ./gradlew eclipse
+    ./gradlew idea
 
 ### Build a jar and run it ###
     ./gradlew jar

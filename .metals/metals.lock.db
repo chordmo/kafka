@@ -1,0 +1,6 @@
+#FileLock
+#Sun Jul 07 09:27:56 CST 2019
+hostName=192.168.30.2
+id=16bbbaba357add8057cad1ec373db54debb14fc15ae
+method=file
+server=192.168.30.2\:52050

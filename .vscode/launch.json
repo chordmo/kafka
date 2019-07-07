@@ -1,0 +1,427 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AdminClientConfig<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.clients.admin.AdminClientConfig",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConsumerConfig<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.clients.consumer.ConsumerConfig",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConsumerMetrics<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.clients.consumer.internals.ConsumerMetrics",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ProducerConfig<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.clients.producer.ProducerConfig",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ProducerMetrics<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.clients.producer.internals.ProducerMetrics",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HistogramTest<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.common.metrics.stats.HistogramTest",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ApiKeys<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.common.protocol.ApiKeys",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Errors<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.common.protocol.Errors",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Protocol<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.common.protocol.Protocol",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Type<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.common.protocol.types.Type",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MetricsBench<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.test.MetricsBench",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Microbenchmarks<clients>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.test.Microbenchmarks",
+            "projectName": "clients"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsResetter<core>",
+            "request": "launch",
+            "mainClass": "kafka.tools.StreamsResetter",
+            "projectName": "core"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MessageGenerator<generator>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.message.MessageGenerator",
+            "projectName": "generator"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LRUCacheBenchmark<jmh-benchmarks>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.jmh.cache.LRUCacheBenchmark",
+            "projectName": "jmh-benchmarks"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-KafkaConsumerProducerDemo<kafka-examples>",
+            "request": "launch",
+            "mainClass": "kafka.examples.KafkaConsumerProducerDemo",
+            "projectName": "kafka-examples"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConnectDistributed<runtime>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.connect.cli.ConnectDistributed",
+            "projectName": "runtime",
+            "args": [
+                "/Users/m/code/bigdata/kafka/kafka/config/connect-distributed.properties"
+            ],
+            "vmArgs": [
+                "-Dlog4j.configuration=file:///Users/m/code/bigdata/kafka/kafka/config/connect-log4j.properties",
+                "-Dkafka.logs.dir=/stock/logs/kafka"
+            ]
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConnectStandalone<runtime>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.connect.cli.ConnectStandalone",
+            "projectName": "runtime"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConnectMetrics<runtime>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.connect.runtime.ConnectMetrics",
+            "projectName": "runtime"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SinkConnectorConfig<runtime>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.connect.runtime.SinkConnectorConfig",
+            "projectName": "runtime"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SourceConnectorConfig<runtime>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.connect.runtime.SourceConnectorConfig",
+            "projectName": "runtime"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DistributedConfig<runtime>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.connect.runtime.distributed.DistributedConfig",
+            "projectName": "runtime"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TransformationDoc<runtime>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.connect.tools.TransformationDoc",
+            "projectName": "runtime"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PageViewTypedDemo<streams-examples>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.examples.pageview.PageViewTypedDemo",
+            "projectName": "streams-examples"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PageViewUntypedDemo<streams-examples>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.examples.pageview.PageViewUntypedDemo",
+            "projectName": "streams-examples"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PipeDemo<streams-examples>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.examples.pipe.PipeDemo",
+            "projectName": "streams-examples"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TemperatureDemo<streams-examples>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.examples.temperature.TemperatureDemo",
+            "projectName": "streams-examples"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordCountDemo<streams-examples>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.examples.wordcount.WordCountDemo",
+            "projectName": "streams-examples"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordCountProcessorDemo<streams-examples>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.examples.wordcount.WordCountProcessorDemo",
+            "projectName": "streams-examples"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsConfig<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.StreamsConfig",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleBenchmark<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.perf.SimpleBenchmark",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BrokerCompatibilityTest<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.BrokerCompatibilityTest",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SmokeTestDriver<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.SmokeTestDriver",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsBrokerDownResilienceTest<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsBrokerDownResilienceTest",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsEosTest<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsEosTest",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsNamedRepartitionTest<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsNamedRepartitionTest",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsOptimizedTest<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsOptimizedTest",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsSmokeTest<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsSmokeTest",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsStandByReplicaTest<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsStandByReplicaTest",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsUpgradeTest<streams>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsUpgradeTest",
+            "projectName": "streams"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ClientCompatibilityTest<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.tools.ClientCompatibilityTest",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ProducerPerformance<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.tools.ProducerPerformance",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TransactionalMessageCopier<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.tools.TransactionalMessageCopier",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VerifiableConsumer<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.tools.VerifiableConsumer",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VerifiableLog4jAppender<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.tools.VerifiableLog4jAppender",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VerifiableProducer<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.tools.VerifiableProducer",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Agent<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.trogdor.agent.Agent",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AgentClient<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.trogdor.agent.AgentClient",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Coordinator<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.trogdor.coordinator.Coordinator",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CoordinatorClient<tools>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.trogdor.coordinator.CoordinatorClient",
+            "projectName": "tools"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsUpgradeTest<upgrade-system-tests-0100>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsUpgradeTest",
+            "projectName": "upgrade-system-tests-0100"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsUpgradeTest<upgrade-system-tests-0101>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsUpgradeTest",
+            "projectName": "upgrade-system-tests-0101"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsUpgradeTest<upgrade-system-tests-0102>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsUpgradeTest",
+            "projectName": "upgrade-system-tests-0102"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsUpgradeTest<upgrade-system-tests-0110>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsUpgradeTest",
+            "projectName": "upgrade-system-tests-0110"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsUpgradeTest<upgrade-system-tests-10>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsUpgradeTest",
+            "projectName": "upgrade-system-tests-10"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsUpgradeTest<upgrade-system-tests-11>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsUpgradeTest",
+            "projectName": "upgrade-system-tests-11"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsUpgradeTest<upgrade-system-tests-20>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsUpgradeTest",
+            "projectName": "upgrade-system-tests-20"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StreamsUpgradeTest<upgrade-system-tests-21>",
+            "request": "launch",
+            "mainClass": "org.apache.kafka.streams.tests.StreamsUpgradeTest",
+            "projectName": "upgrade-system-tests-21"
+        }
+    ]
+}

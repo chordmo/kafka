@@ -53,3 +53,6 @@ kafkatest.egg-info/
 systest/
 *.swp
 clients/src/generated
+
+.metals/
+.bloop/

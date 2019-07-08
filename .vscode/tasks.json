@@ -1,0 +1,39 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "run",
+            "isBuildCommand": true,
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
+        }
+    ],
+    "isShellCommand": true,
+    "args": [],
+    "showOutput": "always",
+    "echoCommand": true,
+    "suppressTaskName": true,
+    "windows": {
+        "command": "cmd",
+        "args": [
+            "/C",
+            "scala.bat"
+        ]
+    },
+    "linux": {
+        "command": "sh",
+        "args": [
+            "scala"
+        ]
+    },
+    "osx": {
+        "command": "sh",
+        "args": [
+            "scala"
+        ]
+    }
+}

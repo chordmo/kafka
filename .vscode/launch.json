@@ -129,11 +129,12 @@
             "mainClass": "org.apache.kafka.connect.cli.ConnectDistributed",
             "projectName": "runtime",
             "args": [
-                "/Users/m/code/bigdata/kafka/schema-registry/config/connect-avro-distributed.properties"
+                "/Users/m/code/bigdata/kafka/kafka/config/connect-avro-distributed.properties"
             ],
             "vmArgs": [
                 "-Dlog4j.configuration=file:///Users/m/code/bigdata/kafka/kafka/config/connect-log4j.properties",
-                "-Dkafka.logs.dir=/stock/logs/kafka"
+                "-Dkafka.logs.dir=/stock/logs/kafka",
+                "-Xmx2g"
             ]
         },
         {

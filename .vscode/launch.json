@@ -134,7 +134,7 @@
             "vmArgs": [
                 "-Dlog4j.configuration=file:///Users/m/code/bigdata/kafka/kafka/config/connect-log4j.properties",
                 "-Dkafka.logs.dir=/stock/logs/kafka",
-                "-Xmx2g"
+                "-Xmx3000m"
             ]
         },
         {
@@ -142,7 +142,16 @@
             "name": "Debug (Launch)-ConnectStandalone<runtime>",
             "request": "launch",
             "mainClass": "org.apache.kafka.connect.cli.ConnectStandalone",
-            "projectName": "runtime"
+            "projectName": "runtime",
+            "args": [
+                "/Users/m/code/bigdata/kafka/kafka/config/woker.properties",
+                "/Users/m/code/bigdata/kafka/kafka/config/woker.properties"
+            ],
+            "vmArgs": [
+                "-Dlog4j.configuration=file:///Users/m/code/bigdata/kafka/kafka/config/connect-log4j.properties",
+                "-Dkafka.logs.dir=/stock/logs/kafka",
+                "-Xmx2g"
+            ]
         },
         {
             "type": "java",

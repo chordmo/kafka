@@ -133,8 +133,8 @@
             ],
             "vmArgs": [
                 "-Dlog4j.configuration=file:///Users/m/code/bigdata/kafka/kafka/config/connect-log4j.properties",
-                "-Dkafka.logs.dir=/stock/logs/kafka",
-                "-Xmx3000m"
+                "-Dkafka.logs.dir=/stock/logs/kafka-logs".
+                "-Xmx1000m"
             ]
         },
         {

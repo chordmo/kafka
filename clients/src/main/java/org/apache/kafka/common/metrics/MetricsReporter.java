@@ -16,9 +16,9 @@
  */
 package org.apache.kafka.common.metrics;
 
-import java.util.List;
-
 import org.apache.kafka.common.Configurable;
+
+import java.util.List;
 
 /**
  * A plugin interface to allow things to listen as new metrics are created so they can be reported.

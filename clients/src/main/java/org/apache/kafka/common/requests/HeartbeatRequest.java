@@ -23,9 +23,7 @@ import org.apache.kafka.common.protocol.types.Struct;
 
 import java.nio.ByteBuffer;
 
-import static org.apache.kafka.common.protocol.CommonFields.GENERATION_ID;
-import static org.apache.kafka.common.protocol.CommonFields.GROUP_ID;
-import static org.apache.kafka.common.protocol.CommonFields.MEMBER_ID;
+import static org.apache.kafka.common.protocol.CommonFields.*;
 
 public class HeartbeatRequest extends AbstractRequest {
     private static final Schema HEARTBEAT_REQUEST_V0 = new Schema(

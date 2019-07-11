@@ -21,11 +21,7 @@ import org.apache.kafka.trogdor.fault.FilesUnreadableFaultSpec;
 import org.apache.kafka.trogdor.fault.Kibosh;
 import org.apache.kafka.trogdor.fault.NetworkPartitionFaultSpec;
 import org.apache.kafka.trogdor.fault.ProcessStopFaultSpec;
-import org.apache.kafka.trogdor.rest.AgentStatusResponse;
-import org.apache.kafka.trogdor.rest.TasksResponse;
-import org.apache.kafka.trogdor.rest.WorkerDone;
-import org.apache.kafka.trogdor.rest.WorkerRunning;
-import org.apache.kafka.trogdor.rest.WorkerStopping;
+import org.apache.kafka.trogdor.rest.*;
 import org.apache.kafka.trogdor.workload.PartitionsSpec;
 import org.apache.kafka.trogdor.workload.ProduceBenchSpec;
 import org.apache.kafka.trogdor.workload.RoundTripWorkloadSpec;
@@ -33,11 +29,7 @@ import org.apache.kafka.trogdor.workload.TopicsSpec;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 import static org.junit.Assert.assertNotNull;
 

@@ -43,23 +43,13 @@ import org.powermock.api.easymock.annotation.MockStrict;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
-import static org.powermock.api.easymock.PowerMock.verifyAll;
-import static org.powermock.api.easymock.PowerMock.replayAll;
-import static org.easymock.EasyMock.strictMock;
 import static org.easymock.EasyMock.partialMockBuilder;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.easymock.EasyMock.strictMock;
+import static org.junit.Assert.*;
+import static org.powermock.api.easymock.PowerMock.replayAll;
+import static org.powermock.api.easymock.PowerMock.verifyAll;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({AbstractHerder.class})

@@ -19,12 +19,7 @@ package org.apache.kafka.clients.consumer;
 import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.utils.AbstractIterator;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * A container that holds the list {@link ConsumerRecord} per partition for a

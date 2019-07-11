@@ -28,13 +28,7 @@ import org.apache.kafka.common.resource.ResourcePatternFilter;
 import java.nio.ByteBuffer;
 import java.util.Collections;
 
-import static org.apache.kafka.common.protocol.CommonFields.HOST_FILTER;
-import static org.apache.kafka.common.protocol.CommonFields.OPERATION;
-import static org.apache.kafka.common.protocol.CommonFields.PERMISSION_TYPE;
-import static org.apache.kafka.common.protocol.CommonFields.PRINCIPAL_FILTER;
-import static org.apache.kafka.common.protocol.CommonFields.RESOURCE_NAME_FILTER;
-import static org.apache.kafka.common.protocol.CommonFields.RESOURCE_PATTERN_TYPE_FILTER;
-import static org.apache.kafka.common.protocol.CommonFields.RESOURCE_TYPE;
+import static org.apache.kafka.common.protocol.CommonFields.*;
 
 public class DescribeAclsRequest extends AbstractRequest {
     private static final Schema DESCRIBE_ACLS_REQUEST_V0 = new Schema(

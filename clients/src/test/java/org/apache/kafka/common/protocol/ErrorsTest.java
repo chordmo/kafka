@@ -16,16 +16,14 @@
  */
 package org.apache.kafka.common.protocol;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNull;
+import org.apache.kafka.common.errors.ApiException;
+import org.apache.kafka.common.errors.TimeoutException;
+import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import org.apache.kafka.common.errors.ApiException;
-import org.apache.kafka.common.errors.TimeoutException;
-import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class ErrorsTest {
 

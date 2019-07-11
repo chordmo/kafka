@@ -24,9 +24,7 @@ import org.junit.Test;
 
 import static java.lang.Long.MAX_VALUE;
 import static java.time.Duration.ofMillis;
-import static org.apache.kafka.streams.kstream.Suppressed.BufferConfig.maxBytes;
-import static org.apache.kafka.streams.kstream.Suppressed.BufferConfig.maxRecords;
-import static org.apache.kafka.streams.kstream.Suppressed.BufferConfig.unbounded;
+import static org.apache.kafka.streams.kstream.Suppressed.BufferConfig.*;
 import static org.apache.kafka.streams.kstream.Suppressed.untilTimeLimit;
 import static org.apache.kafka.streams.kstream.Suppressed.untilWindowCloses;
 import static org.apache.kafka.streams.kstream.internals.suppress.BufferFullStrategy.SHUT_DOWN;

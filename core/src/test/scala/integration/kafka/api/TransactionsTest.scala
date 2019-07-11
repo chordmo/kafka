@@ -18,8 +18,8 @@
 package kafka.api
 
 import java.lang.{Long => JLong}
-import java.util.{Optional, Properties}
 import java.util.concurrent.TimeUnit
+import java.util.{Optional, Properties}
 
 import kafka.integration.KafkaServerTestHarness
 import kafka.server.KafkaConfig
@@ -27,10 +27,10 @@ import kafka.utils.TestUtils
 import kafka.utils.TestUtils.consumeRecords
 import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer, OffsetAndMetadata}
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
-import org.apache.kafka.common.{KafkaException, TopicPartition}
 import org.apache.kafka.common.errors.ProducerFencedException
-import org.junit.{After, Before, Test}
+import org.apache.kafka.common.{KafkaException, TopicPartition}
 import org.junit.Assert._
+import org.junit.{After, Before, Test}
 
 import scala.collection.JavaConverters._
 import scala.collection.mutable.Buffer

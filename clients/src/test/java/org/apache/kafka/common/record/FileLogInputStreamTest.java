@@ -30,18 +30,11 @@ import java.util.Collection;
 import java.util.List;
 
 import static java.util.Arrays.asList;
-import static org.apache.kafka.common.record.RecordBatch.MAGIC_VALUE_V0;
-import static org.apache.kafka.common.record.RecordBatch.MAGIC_VALUE_V1;
-import static org.apache.kafka.common.record.RecordBatch.MAGIC_VALUE_V2;
-import static org.apache.kafka.common.record.RecordBatch.NO_TIMESTAMP;
+import static org.apache.kafka.common.record.RecordBatch.*;
 import static org.apache.kafka.common.record.TimestampType.CREATE_TIME;
 import static org.apache.kafka.common.record.TimestampType.NO_TIMESTAMP_TYPE;
 import static org.apache.kafka.test.TestUtils.tempFile;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)
 public class FileLogInputStreamTest {

@@ -16,22 +16,13 @@
  */
 package org.apache.kafka.test;
 
-import org.apache.kafka.common.network.ChannelState;
-import org.apache.kafka.common.network.NetworkReceive;
-import org.apache.kafka.common.network.NetworkSend;
-import org.apache.kafka.common.network.Selectable;
-import org.apache.kafka.common.network.Send;
+import org.apache.kafka.common.network.*;
 import org.apache.kafka.common.requests.ByteBufferChannel;
 import org.apache.kafka.common.utils.Time;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * A fake selector to use for testing

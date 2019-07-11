@@ -22,6 +22,7 @@ import kafka.utils.Json
 import org.apache.kafka.common.security.auth.KafkaPrincipal
 import org.junit.{Assert, Test}
 import org.scalatest.junit.JUnitSuite
+
 import scala.collection.JavaConverters._
 
 class AclTest extends JUnitSuite {

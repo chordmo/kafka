@@ -19,11 +19,7 @@ package org.apache.kafka.clients.consumer;
 import org.apache.kafka.clients.consumer.internals.AbstractPartitionAssignor;
 import org.apache.kafka.common.TopicPartition;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * <p>The range assignor works on a per-topic basis. For each topic, we lay out the available partitions in numeric order

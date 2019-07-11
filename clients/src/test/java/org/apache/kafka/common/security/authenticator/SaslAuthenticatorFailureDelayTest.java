@@ -19,14 +19,7 @@ package org.apache.kafka.common.security.authenticator;
 import org.apache.kafka.common.config.SaslConfigs;
 import org.apache.kafka.common.config.internals.BrokerSecurityConfigs;
 import org.apache.kafka.common.errors.SaslAuthenticationException;
-import org.apache.kafka.common.network.CertStores;
-import org.apache.kafka.common.network.ChannelBuilder;
-import org.apache.kafka.common.network.ChannelBuilders;
-import org.apache.kafka.common.network.ChannelState;
-import org.apache.kafka.common.network.ListenerName;
-import org.apache.kafka.common.network.NetworkTestUtils;
-import org.apache.kafka.common.network.NioEchoServer;
-import org.apache.kafka.common.network.Selector;
+import org.apache.kafka.common.network.*;
 import org.apache.kafka.common.security.JaasContext;
 import org.apache.kafka.common.security.TestSecurityConfig;
 import org.apache.kafka.common.security.auth.SecurityProtocol;
@@ -41,11 +34,7 @@ import org.junit.runners.Parameterized;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

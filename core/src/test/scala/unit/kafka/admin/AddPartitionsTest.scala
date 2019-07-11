@@ -18,15 +18,15 @@
 package kafka.admin
 
 import kafka.network.SocketServer
-import org.junit.Assert._
-import kafka.utils.TestUtils._
-import kafka.utils.TestUtils
 import kafka.server.BaseRequestTest
+import kafka.utils.TestUtils
+import kafka.utils.TestUtils._
 import org.apache.kafka.common.TopicPartition
 import org.apache.kafka.common.errors.InvalidReplicaAssignmentException
 import org.apache.kafka.common.protocol.ApiKeys
 import org.apache.kafka.common.requests.MetadataResponse.TopicMetadata
 import org.apache.kafka.common.requests.{MetadataRequest, MetadataResponse}
+import org.junit.Assert._
 import org.junit.{Before, Test}
 
 import scala.collection.JavaConverters._

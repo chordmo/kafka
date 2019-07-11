@@ -46,15 +46,7 @@ package org.apache.kafka.trogdor.coordinator;
 import org.apache.kafka.trogdor.agent.AgentClient;
 import org.apache.kafka.trogdor.common.Node;
 import org.apache.kafka.trogdor.common.ThreadUtils;
-import org.apache.kafka.trogdor.rest.AgentStatusResponse;
-import org.apache.kafka.trogdor.rest.CreateWorkerRequest;
-import org.apache.kafka.trogdor.rest.StopWorkerRequest;
-import org.apache.kafka.trogdor.rest.WorkerDone;
-import org.apache.kafka.trogdor.rest.WorkerReceiving;
-import org.apache.kafka.trogdor.rest.WorkerRunning;
-import org.apache.kafka.trogdor.rest.WorkerStarting;
-import org.apache.kafka.trogdor.rest.WorkerState;
-import org.apache.kafka.trogdor.rest.WorkerStopping;
+import org.apache.kafka.trogdor.rest.*;
 import org.apache.kafka.trogdor.task.TaskSpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -62,11 +54,7 @@ import org.slf4j.LoggerFactory;
 import java.net.ConnectException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * The NodeManager handles communicating with a specific agent node.

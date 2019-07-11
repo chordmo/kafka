@@ -17,11 +17,10 @@
 
 package org.apache.kafka.common.security.auth;
 
-import java.util.List;
-import java.util.Map;
-
 import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.login.AppConfigurationEntry;
+import java.util.List;
+import java.util.Map;
 
 /*
  * Callback handler for SASL-based authentication

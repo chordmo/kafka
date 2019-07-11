@@ -16,11 +16,11 @@
  */
 package org.apache.kafka.common.security;
 
-import javax.security.auth.login.Configuration;
-
 import org.apache.kafka.common.KafkaException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import javax.security.auth.login.Configuration;
 
 public final class JaasUtils {
     private static final Logger LOG = LoggerFactory.getLogger(JaasUtils.class);

@@ -19,31 +19,29 @@ package kafka.server
 
 import java.nio.ByteBuffer
 import java.util.Optional
-import java.util.concurrent.locks.ReentrantLock
-
-import kafka.cluster.BrokerEndPoint
-import kafka.utils.{DelayedItem, Pool, ShutdownableThread}
-import org.apache.kafka.common.errors._
-import org.apache.kafka.common.requests.EpochEndOffset._
-import kafka.common.ClientIdAndBroker
-import kafka.metrics.KafkaMetricsGroup
-import kafka.utils.CoreUtils.inLock
-import org.apache.kafka.common.protocol.Errors
-import AbstractFetcherThread._
-
-import scala.collection.{Map, Set, mutable}
-import scala.collection.JavaConverters._
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicLong
+import java.util.concurrent.locks.ReentrantLock
 import java.util.function.Consumer
 
 import com.yammer.metrics.core.Gauge
+import kafka.cluster.BrokerEndPoint
+import kafka.common.ClientIdAndBroker
 import kafka.log.LogAppendInfo
-import org.apache.kafka.common.{KafkaException, TopicPartition}
+import kafka.metrics.KafkaMetricsGroup
+import kafka.server.AbstractFetcherThread._
+import kafka.utils.CoreUtils.inLock
+import kafka.utils.{DelayedItem, Pool, ShutdownableThread}
+import org.apache.kafka.common.errors._
 import org.apache.kafka.common.internals.PartitionStates
+import org.apache.kafka.common.protocol.Errors
 import org.apache.kafka.common.record.{FileRecords, MemoryRecords, Records}
+import org.apache.kafka.common.requests.EpochEndOffset._
 import org.apache.kafka.common.requests._
+import org.apache.kafka.common.{KafkaException, TopicPartition}
 
+import scala.collection.JavaConverters._
+import scala.collection.{Map, Set, mutable}
 import scala.math._
 
 /**

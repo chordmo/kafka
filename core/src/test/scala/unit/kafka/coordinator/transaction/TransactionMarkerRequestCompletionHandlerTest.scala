@@ -16,8 +16,8 @@
  */
 package kafka.coordinator.transaction
 
-import java.{lang, util}
 import java.util.Arrays.asList
+import java.{lang, util}
 
 import org.apache.kafka.clients.ClientResponse
 import org.apache.kafka.common.TopicPartition

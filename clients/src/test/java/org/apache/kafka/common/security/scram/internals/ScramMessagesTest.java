@@ -16,25 +16,16 @@
  */
 package org.apache.kafka.common.security.scram.internals;
 
+import org.apache.kafka.common.security.scram.internals.ScramMessages.*;
+import org.junit.Before;
+import org.junit.Test;
+
+import javax.security.sasl.SaslException;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.Collections;
 
-import javax.security.sasl.SaslException;
-
-import org.apache.kafka.common.security.scram.internals.ScramMessages.AbstractScramMessage;
-import org.apache.kafka.common.security.scram.internals.ScramMessages.ClientFinalMessage;
-import org.apache.kafka.common.security.scram.internals.ScramMessages.ClientFirstMessage;
-import org.apache.kafka.common.security.scram.internals.ScramMessages.ServerFinalMessage;
-import org.apache.kafka.common.security.scram.internals.ScramMessages.ServerFirstMessage;
-
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class ScramMessagesTest {
 

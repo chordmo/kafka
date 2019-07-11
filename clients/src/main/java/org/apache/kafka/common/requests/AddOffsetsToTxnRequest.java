@@ -23,10 +23,7 @@ import org.apache.kafka.common.protocol.types.Struct;
 
 import java.nio.ByteBuffer;
 
-import static org.apache.kafka.common.protocol.CommonFields.GROUP_ID;
-import static org.apache.kafka.common.protocol.CommonFields.PRODUCER_EPOCH;
-import static org.apache.kafka.common.protocol.CommonFields.PRODUCER_ID;
-import static org.apache.kafka.common.protocol.CommonFields.TRANSACTIONAL_ID;
+import static org.apache.kafka.common.protocol.CommonFields.*;
 
 public class AddOffsetsToTxnRequest extends AbstractRequest {
     private static final Schema ADD_OFFSETS_TO_TXN_REQUEST_V0 = new Schema(

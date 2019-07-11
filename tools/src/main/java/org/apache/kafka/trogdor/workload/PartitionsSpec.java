@@ -22,11 +22,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.trogdor.rest.Message;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
 
 /**

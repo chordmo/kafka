@@ -17,19 +17,19 @@
 
 package kafka.utils
 
-import java.util.{Arrays, Base64, UUID}
-import java.util.concurrent.{ConcurrentHashMap, Executors, TimeUnit}
+import java.nio.ByteBuffer
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.locks.ReentrantLock
-import java.nio.ByteBuffer
+import java.util.concurrent.{ConcurrentHashMap, Executors, TimeUnit}
 import java.util.regex.Pattern
+import java.util.{Arrays, Base64, UUID}
 
-import org.scalatest.junit.JUnitSuite
-import org.junit.Assert._
 import kafka.utils.CoreUtils.inLock
 import org.apache.kafka.common.KafkaException
-import org.junit.Test
 import org.apache.kafka.common.utils.Utils
+import org.junit.Assert._
+import org.junit.Test
+import org.scalatest.junit.JUnitSuite
 import org.slf4j.event.Level
 
 import scala.collection.JavaConverters._

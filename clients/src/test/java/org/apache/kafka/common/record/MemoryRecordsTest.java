@@ -36,12 +36,7 @@ import java.util.List;
 
 import static java.util.Arrays.asList;
 import static org.apache.kafka.common.record.RecordBatch.MAGIC_VALUE_V2;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)
 public class MemoryRecordsTest {

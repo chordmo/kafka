@@ -16,15 +16,15 @@
  */
 package org.apache.kafka.common.metrics.stats;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.kafka.common.metrics.CompoundStat;
 import org.apache.kafka.common.metrics.Measurable;
 import org.apache.kafka.common.metrics.MetricConfig;
 import org.apache.kafka.common.metrics.stats.Histogram.BinScheme;
 import org.apache.kafka.common.metrics.stats.Histogram.ConstantBinScheme;
 import org.apache.kafka.common.metrics.stats.Histogram.LinearBinScheme;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A compound stat that reports one or more percentiles

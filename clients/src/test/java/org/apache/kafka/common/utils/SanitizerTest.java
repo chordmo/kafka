@@ -16,19 +16,12 @@
  */
 package org.apache.kafka.common.utils;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import org.junit.Test;
 
+import javax.management.*;
 import java.lang.management.ManagementFactory;
 
-import javax.management.MBeanException;
-import javax.management.MBeanServer;
-import javax.management.MalformedObjectNameException;
-import javax.management.ObjectName;
-import javax.management.OperationsException;
-
-import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class SanitizerTest {
 

@@ -16,13 +16,13 @@
  */
 package org.apache.kafka.common.config;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class SaslConfigsTest {
     @Test

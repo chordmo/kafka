@@ -17,18 +17,7 @@
 package org.apache.kafka.connect.tools;
 
 import org.apache.kafka.common.config.ConfigDef;
-import org.apache.kafka.connect.transforms.Cast;
-import org.apache.kafka.connect.transforms.ExtractField;
-import org.apache.kafka.connect.transforms.Flatten;
-import org.apache.kafka.connect.transforms.HoistField;
-import org.apache.kafka.connect.transforms.InsertField;
-import org.apache.kafka.connect.transforms.MaskField;
-import org.apache.kafka.connect.transforms.RegexRouter;
-import org.apache.kafka.connect.transforms.ReplaceField;
-import org.apache.kafka.connect.transforms.SetSchemaMetadata;
-import org.apache.kafka.connect.transforms.TimestampConverter;
-import org.apache.kafka.connect.transforms.TimestampRouter;
-import org.apache.kafka.connect.transforms.ValueToKey;
+import org.apache.kafka.connect.transforms.*;
 
 import java.io.PrintStream;
 import java.util.Arrays;

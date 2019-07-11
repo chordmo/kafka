@@ -25,15 +25,9 @@ import org.apache.kafka.common.protocol.types.Struct;
 import org.apache.kafka.common.utils.CollectionUtils;
 
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
-import static org.apache.kafka.common.protocol.CommonFields.CURRENT_LEADER_EPOCH;
-import static org.apache.kafka.common.protocol.CommonFields.PARTITION_ID;
-import static org.apache.kafka.common.protocol.CommonFields.TOPIC_NAME;
+import static org.apache.kafka.common.protocol.CommonFields.*;
 
 public class OffsetsForLeaderEpochRequest extends AbstractRequest {
     private static final Field.ComplexArray TOPICS = new Field.ComplexArray("topics",

@@ -17,8 +17,6 @@
 
 package org.apache.kafka.connect.rest.basic.auth.extension;
 
-import javax.ws.rs.HttpMethod;
-import javax.ws.rs.core.UriInfo;
 import org.apache.kafka.common.security.JaasUtils;
 import org.easymock.EasyMock;
 import org.junit.After;
@@ -30,6 +28,11 @@ import org.powermock.api.easymock.annotation.MockStrict;
 import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.modules.junit4.PowerMockRunner;
 
+import javax.security.auth.login.Configuration;
+import javax.ws.rs.HttpMethod;
+import javax.ws.rs.container.ContainerRequestContext;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.UriInfo;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -37,10 +40,6 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
-
-import javax.security.auth.login.Configuration;
-import javax.ws.rs.container.ContainerRequestContext;
-import javax.ws.rs.core.Response;
 
 import static org.powermock.api.easymock.PowerMock.replayAll;
 

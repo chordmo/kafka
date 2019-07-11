@@ -16,22 +16,6 @@
  */
 package org.apache.kafka.common.security.scram.internals;
 
-import java.nio.charset.StandardCharsets;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Map;
-
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.NameCallback;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.UnsupportedCallbackException;
-import javax.security.sasl.SaslClient;
-import javax.security.sasl.SaslClientFactory;
-import javax.security.sasl.SaslException;
-
 import org.apache.kafka.common.errors.IllegalSaslStateException;
 import org.apache.kafka.common.security.scram.ScramExtensionsCallback;
 import org.apache.kafka.common.security.scram.internals.ScramMessages.ClientFinalMessage;
@@ -39,6 +23,17 @@ import org.apache.kafka.common.security.scram.internals.ScramMessages.ServerFina
 import org.apache.kafka.common.security.scram.internals.ScramMessages.ServerFirstMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import javax.security.auth.callback.*;
+import javax.security.sasl.SaslClient;
+import javax.security.sasl.SaslClientFactory;
+import javax.security.sasl.SaslException;
+import java.nio.charset.StandardCharsets;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * SaslClient implementation for SASL/SCRAM.

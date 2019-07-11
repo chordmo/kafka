@@ -20,11 +20,10 @@ package org.apache.kafka.trogdor.common;
 import org.apache.kafka.trogdor.agent.Agent;
 import org.apache.kafka.trogdor.basic.BasicNode;
 import org.apache.kafka.trogdor.basic.BasicTopology;
-
 import org.apache.kafka.trogdor.coordinator.Coordinator;
 import org.junit.Rule;
-import org.junit.rules.Timeout;
 import org.junit.Test;
+import org.junit.rules.Timeout;
 
 import java.util.HashMap;
 import java.util.HashSet;

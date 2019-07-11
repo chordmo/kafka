@@ -18,9 +18,9 @@ package org.apache.kafka.common.requests;
 
 import org.apache.kafka.common.protocol.Errors;
 
-import static org.apache.kafka.common.record.RecordBatch.NO_PARTITION_LEADER_EPOCH;
-
 import java.util.Objects;
+
+import static org.apache.kafka.common.record.RecordBatch.NO_PARTITION_LEADER_EPOCH;
 
 /**
  * The offset, fetched from a leader, for a particular partition.

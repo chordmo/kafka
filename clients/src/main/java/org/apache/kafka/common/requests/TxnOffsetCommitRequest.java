@@ -29,15 +29,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-import static org.apache.kafka.common.protocol.CommonFields.COMMITTED_LEADER_EPOCH;
-import static org.apache.kafka.common.protocol.CommonFields.COMMITTED_METADATA;
-import static org.apache.kafka.common.protocol.CommonFields.COMMITTED_OFFSET;
-import static org.apache.kafka.common.protocol.CommonFields.GROUP_ID;
-import static org.apache.kafka.common.protocol.CommonFields.PARTITION_ID;
-import static org.apache.kafka.common.protocol.CommonFields.PRODUCER_EPOCH;
-import static org.apache.kafka.common.protocol.CommonFields.PRODUCER_ID;
-import static org.apache.kafka.common.protocol.CommonFields.TOPIC_NAME;
-import static org.apache.kafka.common.protocol.CommonFields.TRANSACTIONAL_ID;
+import static org.apache.kafka.common.protocol.CommonFields.*;
 
 public class TxnOffsetCommitRequest extends AbstractRequest {
     // top level fields

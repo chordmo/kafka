@@ -19,12 +19,11 @@ package org.apache.kafka.common.security.scram;
 import org.apache.kafka.common.security.scram.internals.ScramSaslClientProvider;
 import org.apache.kafka.common.security.scram.internals.ScramSaslServerProvider;
 
-import java.util.Collections;
-import java.util.Map;
-
 import javax.security.auth.Subject;
 import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.spi.LoginModule;
+import java.util.Collections;
+import java.util.Map;
 
 public class ScramLoginModule implements LoginModule {
 

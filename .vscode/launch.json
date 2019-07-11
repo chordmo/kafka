@@ -129,12 +129,14 @@
             "mainClass": "org.apache.kafka.connect.cli.ConnectDistributed",
             "projectName": "runtime",
             "args": [
+                "CLASSPATH=/Users/m/code/bigdata/kafka/confluent-5.2.2/share/java/kafka-connect-jdbc/*",
                 "/Users/m/code/bigdata/kafka/kafka/config/connect-avro-distributed.properties"
             ],
             "vmArgs": [
                 "-Dlog4j.configuration=file:///Users/m/code/bigdata/kafka/kafka/config/connect-log4j.properties",
-                "-Dkafka.logs.dir=/stock/logs/kafka-logs".
-                "-Xmx1000m"
+                "-Dkafka.logs.dir=/stock/logs/kafka",
+                "-Xms256M",
+                "-Xmx4G"
             ]
         },
         {
@@ -143,15 +145,6 @@
             "request": "launch",
             "mainClass": "org.apache.kafka.connect.cli.ConnectStandalone",
             "projectName": "runtime",
-            "args": [
-                "/Users/m/code/bigdata/kafka/kafka/config/woker.properties",
-                "/Users/m/code/bigdata/kafka/kafka/config/woker.properties"
-            ],
-            "vmArgs": [
-                "-Dlog4j.configuration=file:///Users/m/code/bigdata/kafka/kafka/config/connect-log4j.properties",
-                "-Dkafka.logs.dir=/stock/logs/kafka",
-                "-Xmx2g"
-            ]
         },
         {
             "type": "java",

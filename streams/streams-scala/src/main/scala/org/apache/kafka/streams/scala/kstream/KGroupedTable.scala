@@ -21,8 +21,8 @@ package org.apache.kafka.streams.scala
 package kstream
 
 import org.apache.kafka.streams.kstream.{KGroupedTable => KGroupedTableJ}
-import org.apache.kafka.streams.scala.ImplicitConversions._
 import org.apache.kafka.streams.scala.FunctionsCompatConversions._
+import org.apache.kafka.streams.scala.ImplicitConversions._
 
 /**
  * Wraps the Java class KGroupedTable and delegates method calls to the underlying Java object.

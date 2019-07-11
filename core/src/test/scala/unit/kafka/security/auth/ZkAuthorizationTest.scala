@@ -19,25 +19,24 @@ package kafka.security.auth
 
 import java.nio.charset.StandardCharsets
 
+import javax.security.auth.login.Configuration
 import kafka.admin.ZkSecurityMigrator
+import kafka.api.ApiVersion
+import kafka.cluster.{Broker, EndPoint}
 import kafka.utils.{Logging, TestUtils}
 import kafka.zk._
-import org.apache.kafka.common.{KafkaException, TopicPartition}
+import org.apache.kafka.common.network.ListenerName
 import org.apache.kafka.common.security.JaasUtils
+import org.apache.kafka.common.security.auth.SecurityProtocol
+import org.apache.kafka.common.utils.Time
+import org.apache.kafka.common.{KafkaException, TopicPartition}
 import org.apache.zookeeper.data.{ACL, Stat}
 import org.junit.Assert._
 import org.junit.{After, Before, Test}
 
-import scala.util.{Failure, Success, Try}
-import javax.security.auth.login.Configuration
-import kafka.api.ApiVersion
-import kafka.cluster.{Broker, EndPoint}
-import org.apache.kafka.common.network.ListenerName
-import org.apache.kafka.common.security.auth.SecurityProtocol
-import org.apache.kafka.common.utils.Time
-
 import scala.collection.JavaConverters._
 import scala.collection.Seq
+import scala.util.{Failure, Success, Try}
 
 class ZkAuthorizationTest extends ZooKeeperTestHarness with Logging {
   val jaasFile = kafka.utils.JaasTestUtils.writeJaasContextsToFile(kafka.utils.JaasTestUtils.zkSections)

@@ -17,11 +17,10 @@
 
 package kafka.utils.json
 
-import com.fasterxml.jackson.databind.{ObjectMapper, JsonMappingException}
-import org.junit.Test
-import org.junit.Assert._
-
+import com.fasterxml.jackson.databind.{JsonMappingException, ObjectMapper}
 import kafka.utils.Json
+import org.junit.Assert._
+import org.junit.Test
 
 class JsonValueTest {
 

@@ -16,8 +16,6 @@
  */
 package org.apache.kafka.clients;
 
-import java.util.concurrent.ThreadLocalRandom;
-
 import org.apache.kafka.common.errors.AuthenticationException;
 import org.apache.kafka.common.utils.LogContext;
 import org.slf4j.Logger;
@@ -28,6 +26,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * The state of our connection to each node in the cluster.

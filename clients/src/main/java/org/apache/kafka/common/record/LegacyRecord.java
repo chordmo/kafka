@@ -17,11 +17,7 @@
 package org.apache.kafka.common.record;
 
 import org.apache.kafka.common.KafkaException;
-import org.apache.kafka.common.utils.ByteBufferOutputStream;
-import org.apache.kafka.common.utils.ByteUtils;
-import org.apache.kafka.common.utils.Checksums;
-import org.apache.kafka.common.utils.Crc32;
-import org.apache.kafka.common.utils.Utils;
+import org.apache.kafka.common.utils.*;
 
 import java.io.DataOutputStream;
 import java.io.IOException;

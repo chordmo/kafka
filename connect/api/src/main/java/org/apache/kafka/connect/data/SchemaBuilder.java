@@ -19,11 +19,7 @@ package org.apache.kafka.connect.data;
 import org.apache.kafka.connect.errors.DataException;
 import org.apache.kafka.connect.errors.SchemaBuilderException;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * <p>

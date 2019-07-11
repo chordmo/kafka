@@ -17,7 +17,6 @@
 package org.apache.kafka.common.security.auth;
 
 import javax.security.sasl.SaslServer;
-
 import java.net.InetAddress;
 
 public class SaslAuthenticationContext implements AuthenticationContext {

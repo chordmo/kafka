@@ -23,9 +23,7 @@ import org.apache.kafka.connect.errors.DataException;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
 public abstract class NumberConverterTest<T extends Number> {
     private static final String TOPIC = "topic";

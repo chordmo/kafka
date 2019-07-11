@@ -25,8 +25,8 @@ import java.util.concurrent.locks.ReentrantLock
 import kafka.utils.CoreUtils.inLock
 import kafka.utils.TestUtils
 import org.apache.kafka.common.utils.Time
-import org.junit.{After, Before, Test}
 import org.junit.Assert._
+import org.junit.{After, Before, Test}
 
 class DelayedOperationTest {
 

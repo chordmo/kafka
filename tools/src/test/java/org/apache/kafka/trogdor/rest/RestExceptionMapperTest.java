@@ -16,18 +16,18 @@
  */
 package org.apache.kafka.trogdor.rest;
 
-import static org.junit.Assert.assertEquals;
-
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.exc.InvalidTypeIdException;
-import javax.ws.rs.NotFoundException;
-import javax.ws.rs.core.Response;
-
 import org.apache.kafka.common.errors.InvalidRequestException;
 import org.apache.kafka.common.errors.SerializationException;
 import org.junit.Test;
+
+import javax.ws.rs.NotFoundException;
+import javax.ws.rs.core.Response;
+
+import static org.junit.Assert.assertEquals;
 
 public class RestExceptionMapperTest {
 

@@ -20,13 +20,7 @@ package org.apache.kafka.trogdor.basic;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.apache.kafka.trogdor.common.Node;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class BasicNode implements Node {
     private final String name;

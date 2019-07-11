@@ -16,11 +16,10 @@
  */
 package org.apache.kafka.common.security.oauthbearer;
 
-import java.util.Objects;
+import org.apache.kafka.common.annotation.InterfaceStability;
 
 import javax.security.auth.callback.Callback;
-
-import org.apache.kafka.common.annotation.InterfaceStability;
+import java.util.Objects;
 
 /**
  * A {@code Callback} for use by the {@code SaslServer} implementation when it

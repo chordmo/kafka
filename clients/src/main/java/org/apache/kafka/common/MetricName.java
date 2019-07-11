@@ -16,9 +16,9 @@
  */
 package org.apache.kafka.common;
 
-import java.util.Map;
-
 import org.apache.kafka.common.utils.Utils;
+
+import java.util.Map;
 
 /**
  * The <code>MetricName</code> class encapsulates a metric's name, logical group and its related attributes. It should be constructed using metrics.MetricName(...).

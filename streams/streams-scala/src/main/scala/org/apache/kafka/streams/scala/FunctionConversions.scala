@@ -19,10 +19,12 @@
  */
 package org.apache.kafka.streams.scala
 
+import java.lang.{Iterable => JIterable}
+
 import org.apache.kafka.streams.KeyValue
 import org.apache.kafka.streams.kstream._
+
 import scala.collection.JavaConverters._
-import java.lang.{Iterable => JIterable}
 
 @deprecated("This object is for internal use only", since = "2.1.0")
 object FunctionConversions {

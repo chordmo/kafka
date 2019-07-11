@@ -16,7 +16,6 @@
  */
 package org.apache.kafka.common.security.auth;
 
-import javax.security.auth.x500.X500Principal;
 import org.apache.kafka.common.config.SaslConfigs;
 import org.apache.kafka.common.network.Authenticator;
 import org.apache.kafka.common.network.TransportLayer;
@@ -27,6 +26,7 @@ import org.apache.kafka.common.security.ssl.SslPrincipalMapper;
 import org.junit.Test;
 
 import javax.net.ssl.SSLSession;
+import javax.security.auth.x500.X500Principal;
 import javax.security.sasl.SaslServer;
 import java.net.InetAddress;
 import java.security.Principal;
@@ -35,11 +35,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.atLeastOnce;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class DefaultKafkaPrincipalBuilderTest {
 

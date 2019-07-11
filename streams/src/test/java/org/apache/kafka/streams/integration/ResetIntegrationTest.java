@@ -19,7 +19,6 @@ package org.apache.kafka.streams.integration;
 import kafka.server.KafkaConfig$;
 import org.apache.kafka.streams.integration.utils.EmbeddedKafkaCluster;
 import org.apache.kafka.test.IntegrationTest;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.ClassRule;

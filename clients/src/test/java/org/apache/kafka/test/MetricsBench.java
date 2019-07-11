@@ -16,16 +16,12 @@
  */
 package org.apache.kafka.test;
 
-import java.util.Arrays;
-
 import org.apache.kafka.common.metrics.Metrics;
 import org.apache.kafka.common.metrics.Sensor;
-import org.apache.kafka.common.metrics.stats.Avg;
-import org.apache.kafka.common.metrics.stats.Count;
-import org.apache.kafka.common.metrics.stats.Max;
-import org.apache.kafka.common.metrics.stats.Percentile;
-import org.apache.kafka.common.metrics.stats.Percentiles;
+import org.apache.kafka.common.metrics.stats.*;
 import org.apache.kafka.common.metrics.stats.Percentiles.BucketSizing;
+
+import java.util.Arrays;
 
 public class MetricsBench {
 

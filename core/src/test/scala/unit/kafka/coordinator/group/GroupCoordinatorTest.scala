@@ -18,23 +18,22 @@
 package kafka.coordinator.group
 
 import java.util.Optional
+import java.util.concurrent.TimeUnit
+import java.util.concurrent.locks.ReentrantLock
 
+import kafka.cluster.Partition
 import kafka.common.OffsetAndMetadata
 import kafka.server.{DelayedOperationPurgatory, KafkaConfig, ReplicaManager}
 import kafka.utils._
 import kafka.utils.timer.MockTimer
+import kafka.zk.KafkaZkClient
 import org.apache.kafka.common.TopicPartition
+import org.apache.kafka.common.internals.Topic
 import org.apache.kafka.common.protocol.Errors
 import org.apache.kafka.common.record.{MemoryRecords, RecordBatch}
 import org.apache.kafka.common.requests.ProduceResponse.PartitionResponse
 import org.apache.kafka.common.requests.{JoinGroupRequest, OffsetCommitRequest, OffsetFetchResponse, TransactionResult}
 import org.easymock.{Capture, EasyMock, IAnswer}
-import java.util.concurrent.TimeUnit
-import java.util.concurrent.locks.ReentrantLock
-
-import kafka.cluster.Partition
-import kafka.zk.KafkaZkClient
-import org.apache.kafka.common.internals.Topic
 import org.junit.Assert._
 import org.junit.{After, Assert, Before, Test}
 import org.scalatest.junit.JUnitSuite

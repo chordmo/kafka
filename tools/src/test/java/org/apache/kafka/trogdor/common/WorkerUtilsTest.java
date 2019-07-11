@@ -18,33 +18,23 @@
 package org.apache.kafka.trogdor.common;
 
 
+import org.apache.kafka.clients.admin.MockAdminClient;
+import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.admin.TopicDescription;
 import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.Node;
 import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.TopicPartitionInfo;
-
-import org.apache.kafka.common.Node;
-import org.apache.kafka.clients.admin.MockAdminClient;
-
 import org.apache.kafka.common.errors.TopicExistsException;
 import org.apache.kafka.common.utils.Utils;
+import org.junit.Before;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.kafka.clients.admin.NewTopic;
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import static org.junit.Assert.assertEquals;
 
 
 public class WorkerUtilsTest {

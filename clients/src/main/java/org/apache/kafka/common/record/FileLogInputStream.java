@@ -28,11 +28,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.Iterator;
 
-import static org.apache.kafka.common.record.Records.LOG_OVERHEAD;
-import static org.apache.kafka.common.record.Records.HEADER_SIZE_UP_TO_MAGIC;
-import static org.apache.kafka.common.record.Records.MAGIC_OFFSET;
-import static org.apache.kafka.common.record.Records.OFFSET_OFFSET;
-import static org.apache.kafka.common.record.Records.SIZE_OFFSET;
+import static org.apache.kafka.common.record.Records.*;
 
 /**
  * A log input stream which is backed by a {@link FileChannel}.

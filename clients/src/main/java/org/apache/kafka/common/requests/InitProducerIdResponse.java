@@ -25,10 +25,7 @@ import org.apache.kafka.common.record.RecordBatch;
 import java.nio.ByteBuffer;
 import java.util.Map;
 
-import static org.apache.kafka.common.protocol.CommonFields.ERROR_CODE;
-import static org.apache.kafka.common.protocol.CommonFields.PRODUCER_EPOCH;
-import static org.apache.kafka.common.protocol.CommonFields.PRODUCER_ID;
-import static org.apache.kafka.common.protocol.CommonFields.THROTTLE_TIME_MS;
+import static org.apache.kafka.common.protocol.CommonFields.*;
 
 public class InitProducerIdResponse extends AbstractResponse {
     // Possible error codes:

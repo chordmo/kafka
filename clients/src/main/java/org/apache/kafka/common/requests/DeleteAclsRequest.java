@@ -34,13 +34,7 @@ import java.util.Collections;
 import java.util.List;
 
 import static org.apache.kafka.common.protocol.ApiKeys.DELETE_ACLS;
-import static org.apache.kafka.common.protocol.CommonFields.HOST_FILTER;
-import static org.apache.kafka.common.protocol.CommonFields.OPERATION;
-import static org.apache.kafka.common.protocol.CommonFields.PERMISSION_TYPE;
-import static org.apache.kafka.common.protocol.CommonFields.PRINCIPAL_FILTER;
-import static org.apache.kafka.common.protocol.CommonFields.RESOURCE_NAME_FILTER;
-import static org.apache.kafka.common.protocol.CommonFields.RESOURCE_PATTERN_TYPE_FILTER;
-import static org.apache.kafka.common.protocol.CommonFields.RESOURCE_TYPE;
+import static org.apache.kafka.common.protocol.CommonFields.*;
 
 public class DeleteAclsRequest extends AbstractRequest {
     private final static String FILTERS = "filters";

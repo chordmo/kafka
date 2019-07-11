@@ -17,12 +17,7 @@
 package org.apache.kafka.streams.state;
 
 import org.apache.kafka.common.serialization.Serdes;
-import org.apache.kafka.streams.state.internals.InMemoryKeyValueStore;
-import org.apache.kafka.streams.state.internals.MemoryNavigableLRUCache;
-import org.apache.kafka.streams.state.internals.RocksDBSessionStore;
-import org.apache.kafka.streams.state.internals.RocksDBStore;
-import org.apache.kafka.streams.state.internals.RocksDBTimestampedStore;
-import org.apache.kafka.streams.state.internals.RocksDBWindowStore;
+import org.apache.kafka.streams.state.internals.*;
 import org.junit.Test;
 
 import static java.time.Duration.ZERO;

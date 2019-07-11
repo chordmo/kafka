@@ -89,7 +89,7 @@ allprojects {
 }
 
 ext {
-  gradleVersion = "5.1.1"
+  gradleVersion = "5.5"
   minJavaVersion = "8"
   buildVersionFileName = "kafka-version.properties"
 
@@ -209,7 +209,7 @@ subprojects {
     maxParallelForks = userMaxForks ?: Runtime.runtime.availableProcessors()
 
     minHeapSize = "256m"
-    maxHeapSize = "2048m"
+    maxHeapSize = "3048m"
 
     testLogging {
       events = userTestLoggingEvents ?: testLoggingEvents
@@ -223,7 +223,7 @@ subprojects {
     maxParallelForks = userMaxForks ?: Runtime.runtime.availableProcessors()
 
     minHeapSize = "256m"
-    maxHeapSize = "2048m"
+    maxHeapSize = "3048m"
 
     testLogging {
       events = userTestLoggingEvents ?: testLoggingEvents
@@ -241,7 +241,7 @@ subprojects {
     maxParallelForks = userMaxForks ?: Runtime.runtime.availableProcessors()
 
     minHeapSize = "256m"
-    maxHeapSize = "2048m"
+    maxHeapSize = "3048m"
 
     testLogging {
       events = userTestLoggingEvents ?: testLoggingEvents
@@ -1350,8 +1350,7 @@ project(':connect:api') {
 
     testRuntime libs.slf4jlog4j
     testCompile project(':clients').sourceSets.test.output
-  }
-
+  } 
   javadoc {
     include "**/org/apache/kafka/connect/**" // needed for the `javadocAll` task
     options.links "http://docs.oracle.com/javase/7/docs/api/"
@@ -1476,6 +1475,7 @@ project(':connect:runtime') {
     compile libs.jettyClient
     compile(libs.reflections)
     compile(libs.mavenArtifact)
+    compile('kafka.connect.jdbc:5.2.2')
 
     testCompile project(':clients').sourceSets.test.output
     testCompile libs.easymock

@@ -23,8 +23,8 @@ import org.junit.Test;
 import java.io.UnsupportedEncodingException;
 import java.util.Collections;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
 public class StringConverterTest {
     private static final String TOPIC = "topic";

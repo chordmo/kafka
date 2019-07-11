@@ -16,12 +16,12 @@
  */
 package org.apache.kafka.common;
 
+import org.apache.kafka.common.utils.Utils;
+
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
-
-import org.apache.kafka.common.utils.Utils;
 
 /**
  * A template for a MetricName. It contains a name, group, and description, as

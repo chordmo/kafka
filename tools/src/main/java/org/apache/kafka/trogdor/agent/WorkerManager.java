@@ -25,12 +25,7 @@ import org.apache.kafka.common.utils.Time;
 import org.apache.kafka.common.utils.Utils;
 import org.apache.kafka.trogdor.common.Platform;
 import org.apache.kafka.trogdor.common.ThreadUtils;
-import org.apache.kafka.trogdor.rest.RequestConflictException;
-import org.apache.kafka.trogdor.rest.WorkerDone;
-import org.apache.kafka.trogdor.rest.WorkerRunning;
-import org.apache.kafka.trogdor.rest.WorkerStarting;
-import org.apache.kafka.trogdor.rest.WorkerStopping;
-import org.apache.kafka.trogdor.rest.WorkerState;
+import org.apache.kafka.trogdor.rest.*;
 import org.apache.kafka.trogdor.task.AgentWorkerStatusTracker;
 import org.apache.kafka.trogdor.task.TaskSpec;
 import org.apache.kafka.trogdor.task.TaskWorker;
@@ -41,12 +36,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public final class WorkerManager {

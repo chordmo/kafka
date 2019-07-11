@@ -19,19 +19,19 @@ package kafka.coordinator.transaction
 import java.util.Arrays.asList
 import java.util.concurrent.locks.ReentrantReadWriteLock
 
+import com.yammer.metrics.Metrics
+import kafka.common.RequestAndCompletionHandler
 import kafka.server.{DelayedOperationPurgatory, KafkaConfig, MetadataCache}
-import kafka.utils.timer.MockTimer
 import kafka.utils.TestUtils
+import kafka.utils.timer.MockTimer
 import org.apache.kafka.clients.{ClientResponse, NetworkClient}
+import org.apache.kafka.common.protocol.{ApiKeys, Errors}
 import org.apache.kafka.common.requests.{RequestHeader, TransactionResult, WriteTxnMarkersRequest, WriteTxnMarkersResponse}
 import org.apache.kafka.common.utils.MockTime
 import org.apache.kafka.common.{Node, TopicPartition}
 import org.easymock.{Capture, EasyMock, IAnswer}
 import org.junit.Assert._
 import org.junit.Test
-import com.yammer.metrics.Metrics
-import kafka.common.RequestAndCompletionHandler
-import org.apache.kafka.common.protocol.{ApiKeys, Errors}
 
 import scala.collection.JavaConverters._
 import scala.collection.mutable

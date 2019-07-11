@@ -19,11 +19,7 @@ package org.apache.kafka.common.network;
 import org.apache.kafka.common.Configurable;
 import org.apache.kafka.common.KafkaException;
 import org.apache.kafka.common.config.internals.BrokerSecurityConfigs;
-import org.apache.kafka.common.security.auth.AuthenticationContext;
-import org.apache.kafka.common.security.auth.KafkaPrincipal;
-import org.apache.kafka.common.security.auth.KafkaPrincipalBuilder;
-import org.apache.kafka.common.security.auth.PlaintextAuthenticationContext;
-import org.apache.kafka.common.security.auth.SecurityProtocol;
+import org.apache.kafka.common.security.auth.*;
 import org.junit.Test;
 
 import java.net.InetAddress;

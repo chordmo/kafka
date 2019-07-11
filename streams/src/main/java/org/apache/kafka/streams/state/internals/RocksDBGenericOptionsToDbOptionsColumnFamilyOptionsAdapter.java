@@ -16,31 +16,7 @@
  */
 package org.apache.kafka.streams.state.internals;
 
-import org.rocksdb.AbstractComparator;
-import org.rocksdb.AbstractSlice;
-import org.rocksdb.AccessHint;
-import org.rocksdb.BuiltinComparator;
-import org.rocksdb.Cache;
-import org.rocksdb.ColumnFamilyOptions;
-import org.rocksdb.CompactionOptionsFIFO;
-import org.rocksdb.CompactionOptionsUniversal;
-import org.rocksdb.CompactionPriority;
-import org.rocksdb.CompactionStyle;
-import org.rocksdb.CompressionOptions;
-import org.rocksdb.CompressionType;
-import org.rocksdb.DBOptions;
-import org.rocksdb.DbPath;
-import org.rocksdb.Env;
-import org.rocksdb.InfoLogLevel;
-import org.rocksdb.Logger;
-import org.rocksdb.MemTableConfig;
-import org.rocksdb.MergeOperator;
-import org.rocksdb.Options;
-import org.rocksdb.RateLimiter;
-import org.rocksdb.SstFileManager;
-import org.rocksdb.Statistics;
-import org.rocksdb.TableFormatConfig;
-import org.rocksdb.WALRecoveryMode;
+import org.rocksdb.*;
 
 import java.util.Collection;
 import java.util.List;

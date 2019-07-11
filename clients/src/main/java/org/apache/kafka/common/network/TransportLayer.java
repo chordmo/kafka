@@ -23,16 +23,12 @@ package org.apache.kafka.common.network;
  * As NetworkClient replaces BlockingChannel and other implementations we will be using KafkaChannel as
  * a network I/O channel.
  */
-import java.io.IOException;
-import java.nio.channels.FileChannel;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.SocketChannel;
-import java.nio.channels.ScatteringByteChannel;
-import java.nio.channels.GatheringByteChannel;
-
-import java.security.Principal;
 
 import org.apache.kafka.common.errors.AuthenticationException;
+
+import java.io.IOException;
+import java.nio.channels.*;
+import java.security.Principal;
 
 public interface TransportLayer extends ScatteringByteChannel, GatheringByteChannel {
 

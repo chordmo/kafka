@@ -23,19 +23,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.management.Attribute;
-import javax.management.AttributeList;
-import javax.management.AttributeNotFoundException;
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
-import javax.management.RuntimeMBeanException;
+import javax.management.*;
 import java.lang.management.ManagementFactory;
 import java.util.List;
 
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class KafkaMbeanTest {
 

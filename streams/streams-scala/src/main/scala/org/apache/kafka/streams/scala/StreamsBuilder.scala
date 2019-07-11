@@ -24,10 +24,10 @@ import java.util.regex.Pattern
 
 import org.apache.kafka.streams.kstream.GlobalKTable
 import org.apache.kafka.streams.processor.{ProcessorSupplier, StateStore}
+import org.apache.kafka.streams.scala.ImplicitConversions._
+import org.apache.kafka.streams.scala.kstream._
 import org.apache.kafka.streams.state.StoreBuilder
 import org.apache.kafka.streams.{Topology, StreamsBuilder => StreamsBuilderJ}
-import org.apache.kafka.streams.scala.kstream._
-import ImplicitConversions._
 
 import scala.collection.JavaConverters._
 

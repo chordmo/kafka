@@ -20,12 +20,7 @@ package org.apache.kafka.trogdor.workload;
 import org.apache.kafka.common.TopicPartition;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.HashMap;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 

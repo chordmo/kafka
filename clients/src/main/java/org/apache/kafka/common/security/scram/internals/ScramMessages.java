@@ -18,13 +18,12 @@ package org.apache.kafka.common.security.scram.internals;
 
 import org.apache.kafka.common.utils.Utils;
 
+import javax.security.sasl.SaslException;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import javax.security.sasl.SaslException;
 
 /**
  * SCRAM request/response message creation and parsing based on

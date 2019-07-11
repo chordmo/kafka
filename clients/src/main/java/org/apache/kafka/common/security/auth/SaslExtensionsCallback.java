@@ -17,9 +17,8 @@
 
 package org.apache.kafka.common.security.auth;
 
-import java.util.Objects;
-
 import javax.security.auth.callback.Callback;
+import java.util.Objects;
 
 /**
  * Optional callback used for SASL mechanisms if any extensions need to be set

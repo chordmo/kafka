@@ -16,8 +16,7 @@
  */
 package org.apache.kafka.common.security.oauthbearer.internals.unsecured;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.junit.Test;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
@@ -26,7 +25,8 @@ import java.util.Base64.Encoder;
 import java.util.HashSet;
 import java.util.List;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class OAuthBearerUnsecuredJwsTest {
     private static final String QUOTE = "\"";

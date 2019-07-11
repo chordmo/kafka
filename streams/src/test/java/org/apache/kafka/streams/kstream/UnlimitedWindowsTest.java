@@ -24,9 +24,7 @@ import java.util.Map;
 import static java.time.Instant.ofEpochMilli;
 import static org.apache.kafka.streams.EqualityCheck.verifyEquality;
 import static org.apache.kafka.streams.EqualityCheck.verifyInEquality;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class UnlimitedWindowsTest {
 

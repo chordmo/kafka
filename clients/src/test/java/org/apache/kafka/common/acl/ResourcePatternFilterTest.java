@@ -24,10 +24,7 @@ import org.junit.Test;
 
 import static org.apache.kafka.common.resource.PatternType.LITERAL;
 import static org.apache.kafka.common.resource.PatternType.PREFIXED;
-import static org.apache.kafka.common.resource.ResourceType.ANY;
-import static org.apache.kafka.common.resource.ResourceType.GROUP;
-import static org.apache.kafka.common.resource.ResourceType.TOPIC;
-import static org.apache.kafka.common.resource.ResourceType.UNKNOWN;
+import static org.apache.kafka.common.resource.ResourceType.*;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 

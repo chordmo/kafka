@@ -39,10 +39,7 @@ import org.junit.Test;
 import java.util.Properties;
 import java.util.Random;
 
-import static org.easymock.EasyMock.createMock;
-import static org.easymock.EasyMock.expect;
-import static org.easymock.EasyMock.replay;
-import static org.easymock.EasyMock.verify;
+import static org.easymock.EasyMock.*;
 import static org.junit.Assert.assertTrue;
 
 public class AbstractStreamTest {

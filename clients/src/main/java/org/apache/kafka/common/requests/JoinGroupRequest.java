@@ -31,9 +31,7 @@ import java.util.List;
 
 import static org.apache.kafka.common.protocol.CommonFields.GROUP_ID;
 import static org.apache.kafka.common.protocol.CommonFields.MEMBER_ID;
-import static org.apache.kafka.common.protocol.types.Type.BYTES;
-import static org.apache.kafka.common.protocol.types.Type.INT32;
-import static org.apache.kafka.common.protocol.types.Type.STRING;
+import static org.apache.kafka.common.protocol.types.Type.*;
 
 public class JoinGroupRequest extends AbstractRequest {
     private static final String SESSION_TIMEOUT_KEY_NAME = "session_timeout";

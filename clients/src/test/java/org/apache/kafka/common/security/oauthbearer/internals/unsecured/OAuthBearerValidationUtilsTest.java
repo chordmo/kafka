@@ -16,7 +16,8 @@
  */
 package org.apache.kafka.common.security.oauthbearer.internals.unsecured;
 
-import static org.junit.Assert.assertTrue;
+import org.apache.kafka.common.utils.Time;
+import org.junit.Test;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
@@ -24,8 +25,7 @@ import java.util.Base64;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.kafka.common.utils.Time;
-import org.junit.Test;
+import static org.junit.Assert.assertTrue;
 
 public class OAuthBearerValidationUtilsTest {
     private static final String QUOTE = "\"";

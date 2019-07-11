@@ -20,10 +20,7 @@ import org.apache.kafka.common.errors.CorruptRecordException;
 
 import java.nio.ByteBuffer;
 
-import static org.apache.kafka.common.record.Records.HEADER_SIZE_UP_TO_MAGIC;
-import static org.apache.kafka.common.record.Records.LOG_OVERHEAD;
-import static org.apache.kafka.common.record.Records.MAGIC_OFFSET;
-import static org.apache.kafka.common.record.Records.SIZE_OFFSET;
+import static org.apache.kafka.common.record.Records.*;
 
 /**
  * A byte buffer backed log input stream. This class avoids the need to copy records by returning

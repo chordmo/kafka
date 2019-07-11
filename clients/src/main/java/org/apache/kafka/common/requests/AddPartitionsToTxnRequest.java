@@ -31,10 +31,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.apache.kafka.common.protocol.CommonFields.PRODUCER_EPOCH;
-import static org.apache.kafka.common.protocol.CommonFields.PRODUCER_ID;
-import static org.apache.kafka.common.protocol.CommonFields.TOPIC_NAME;
-import static org.apache.kafka.common.protocol.CommonFields.TRANSACTIONAL_ID;
+import static org.apache.kafka.common.protocol.CommonFields.*;
 import static org.apache.kafka.common.protocol.types.Type.INT32;
 
 public class AddPartitionsToTxnRequest extends AbstractRequest {

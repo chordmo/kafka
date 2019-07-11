@@ -30,9 +30,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.apache.kafka.common.protocol.CommonFields.GENERATION_ID;
-import static org.apache.kafka.common.protocol.CommonFields.GROUP_ID;
-import static org.apache.kafka.common.protocol.CommonFields.MEMBER_ID;
+import static org.apache.kafka.common.protocol.CommonFields.*;
 import static org.apache.kafka.common.protocol.types.Type.BYTES;
 
 public class SyncGroupRequest extends AbstractRequest {

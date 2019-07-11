@@ -35,9 +35,7 @@ import java.util.List;
 import static org.apache.kafka.test.StreamsTestUtils.toList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 public class CompositeReadOnlySessionStoreTest {
 

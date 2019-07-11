@@ -16,45 +16,39 @@
  */
 package kafka.api
 
-import java.util
-import java.util.{Collections, Properties}
-import java.util.Arrays.asList
-import java.util.concurrent.{CountDownLatch, ExecutionException, TimeUnit}
 import java.io.File
+import java.lang.{Long => JLong}
+import java.time.{Duration => JDuration}
+import java.util
+import java.util.Arrays.asList
 import java.util.concurrent.atomic.{AtomicBoolean, AtomicInteger}
+import java.util.concurrent.{CountDownLatch, ExecutionException, TimeUnit}
+import java.util.{Collections, Properties}
 
-import org.apache.kafka.clients.admin.KafkaAdminClientTest
-import org.apache.kafka.common.utils.{Time, Utils}
 import kafka.log.LogConfig
 import kafka.server.{Defaults, KafkaConfig, KafkaServer}
-import org.apache.kafka.clients.admin._
-import kafka.utils.{Logging, TestUtils}
-import kafka.utils.TestUtils._
 import kafka.utils.Implicits._
-import org.apache.kafka.clients.admin.NewTopic
+import kafka.utils.TestUtils._
+import kafka.utils.{Logging, TestUtils}
+import kafka.zk.KafkaZkClient
+import org.apache.kafka.clients.admin.{KafkaAdminClientTest, NewTopic, _}
 import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
-import org.apache.kafka.clients.producer.KafkaProducer
-import org.apache.kafka.clients.producer.ProducerRecord
-import org.apache.kafka.common.{ConsumerGroupState, TopicPartition, TopicPartitionReplica}
+import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 import org.apache.kafka.common.acl._
 import org.apache.kafka.common.config.ConfigResource
 import org.apache.kafka.common.errors._
-import org.junit.{After, Before, Rule, Test}
 import org.apache.kafka.common.requests.{DeleteRecordsRequest, MetadataResponse}
 import org.apache.kafka.common.resource.{PatternType, ResourcePattern, ResourceType}
-import org.junit.rules.Timeout
+import org.apache.kafka.common.utils.{Time, Utils}
+import org.apache.kafka.common.{ConsumerGroupState, TopicPartition, TopicPartitionReplica}
 import org.junit.Assert._
+import org.junit.rules.Timeout
+import org.junit.{After, Before, Rule, Test}
 
-import scala.util.Random
 import scala.collection.JavaConverters._
-
-import kafka.zk.KafkaZkClient
-
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
-
-import java.lang.{Long => JLong}
-import java.time.{Duration => JDuration}
+import scala.util.Random
 
 /**
  * An integration test of the KafkaAdminClient.

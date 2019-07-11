@@ -18,11 +18,7 @@
 package org.apache.kafka.connect.runtime.health;
 
 import org.apache.kafka.connect.errors.ConnectException;
-import org.apache.kafka.connect.health.ConnectClusterState;
-import org.apache.kafka.connect.health.ConnectorHealth;
-import org.apache.kafka.connect.health.ConnectorState;
-import org.apache.kafka.connect.health.ConnectorType;
-import org.apache.kafka.connect.health.TaskState;
+import org.apache.kafka.connect.health.*;
 import org.apache.kafka.connect.runtime.Herder;
 import org.apache.kafka.connect.runtime.rest.entities.ConnectorStateInfo;
 import org.apache.kafka.connect.util.FutureCallback;

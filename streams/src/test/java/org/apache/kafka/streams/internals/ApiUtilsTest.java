@@ -21,13 +21,9 @@ import org.junit.Test;
 import java.time.Duration;
 import java.time.Instant;
 
-import static org.apache.kafka.streams.internals.ApiUtils.prepareMillisCheckFailMsgPrefix;
-import static org.apache.kafka.streams.internals.ApiUtils.validateMillisecondDuration;
-import static org.apache.kafka.streams.internals.ApiUtils.validateMillisecondInstant;
+import static org.apache.kafka.streams.internals.ApiUtils.*;
 import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 
 public class ApiUtilsTest {

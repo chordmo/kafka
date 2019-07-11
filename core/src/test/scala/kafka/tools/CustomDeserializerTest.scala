@@ -22,8 +22,8 @@ import java.io.PrintStream
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.common.serialization.Deserializer
 import org.hamcrest.CoreMatchers
-import org.junit.Test
 import org.junit.Assert.assertThat
+import org.junit.Test
 import org.scalatest.mockito.MockitoSugar
 
 class CustomDeserializer extends Deserializer[String] {

@@ -19,12 +19,7 @@ package org.apache.kafka.common.config;
 import org.apache.kafka.common.config.provider.ConfigProvider;
 import org.apache.kafka.common.config.provider.FileConfigProvider;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

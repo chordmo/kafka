@@ -20,7 +20,6 @@ import org.apache.kafka.common.security.scram.internals.ScramMessages.ClientFina
 import org.apache.kafka.common.security.scram.internals.ScramMessages.ClientFirstMessage;
 import org.apache.kafka.common.security.scram.internals.ScramMessages.ServerFinalMessage;
 import org.apache.kafka.common.security.scram.internals.ScramMessages.ServerFirstMessage;
-
 import org.junit.Test;
 
 import java.util.Base64;

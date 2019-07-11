@@ -16,12 +16,12 @@
  */
 package org.apache.kafka.common.memory;
 
-import java.nio.ByteBuffer;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.kafka.common.utils.Utils;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.nio.ByteBuffer;
+import java.util.concurrent.TimeUnit;
 
 
 public class GarbageCollectedMemoryPoolTest {

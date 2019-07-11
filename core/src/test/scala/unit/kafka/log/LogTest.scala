@@ -30,7 +30,6 @@ import kafka.server.checkpoints.LeaderEpochCheckpointFile
 import kafka.server.epoch.{EpochEntry, LeaderEpochFileCache}
 import kafka.server.{BrokerTopicStats, FetchDataInfo, KafkaConfig, LogDirFailureChannel}
 import kafka.utils._
-import org.apache.kafka.common.{KafkaException, TopicPartition}
 import org.apache.kafka.common.errors._
 import org.apache.kafka.common.record.FileRecords.TimestampAndOffset
 import org.apache.kafka.common.record.MemoryRecords.RecordFilter
@@ -39,15 +38,16 @@ import org.apache.kafka.common.record._
 import org.apache.kafka.common.requests.FetchResponse.AbortedTransaction
 import org.apache.kafka.common.requests.{ListOffsetRequest, ListOffsetResponse}
 import org.apache.kafka.common.utils.{Time, Utils}
+import org.apache.kafka.common.{KafkaException, TopicPartition}
 import org.easymock.EasyMock
 import org.junit.Assert._
 import org.junit.{After, Before, Test}
 import org.scalatest.Assertions
+import org.scalatest.Assertions.{assertThrows, intercept, withClue}
 
-import scala.collection.{Iterable, mutable}
 import scala.collection.JavaConverters._
 import scala.collection.mutable.ListBuffer
-import org.scalatest.Assertions.{assertThrows, intercept, withClue}
+import scala.collection.{Iterable, mutable}
 
 class LogTest {
   var config: KafkaConfig = null

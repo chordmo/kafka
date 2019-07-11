@@ -31,13 +31,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static org.apache.kafka.common.protocol.CommonFields.ERROR_CODE;
-import static org.apache.kafka.common.protocol.CommonFields.PRINCIPAL_NAME;
-import static org.apache.kafka.common.protocol.CommonFields.PRINCIPAL_TYPE;
-import static org.apache.kafka.common.protocol.CommonFields.THROTTLE_TIME_MS;
-import static org.apache.kafka.common.protocol.types.Type.BYTES;
-import static org.apache.kafka.common.protocol.types.Type.INT64;
-import static org.apache.kafka.common.protocol.types.Type.STRING;
+import static org.apache.kafka.common.protocol.CommonFields.*;
+import static org.apache.kafka.common.protocol.types.Type.*;
 
 public class DescribeDelegationTokenResponse extends AbstractResponse {
 

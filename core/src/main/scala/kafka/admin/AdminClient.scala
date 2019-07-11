@@ -14,9 +14,9 @@ package kafka.admin
 
 import java.io.IOException
 import java.nio.ByteBuffer
-import java.util.{Collections, Properties}
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.{ConcurrentLinkedQueue, Future, TimeUnit}
+import java.util.{Collections, Properties}
 
 import kafka.common.KafkaException
 import kafka.coordinator.group.GroupOverview
@@ -30,12 +30,10 @@ import org.apache.kafka.common.errors.{AuthenticationException, TimeoutException
 import org.apache.kafka.common.metrics.Metrics
 import org.apache.kafka.common.network.Selector
 import org.apache.kafka.common.protocol.{ApiKeys, Errors}
-import org.apache.kafka.common.requests._
 import org.apache.kafka.common.requests.ApiVersionsResponse.ApiVersion
 import org.apache.kafka.common.requests.DescribeGroupsResponse.GroupMetadata
-import org.apache.kafka.common.requests.OffsetFetchResponse
-import org.apache.kafka.common.utils.LogContext
-import org.apache.kafka.common.utils.{KafkaThread, Time, Utils}
+import org.apache.kafka.common.requests.{OffsetFetchResponse, _}
+import org.apache.kafka.common.utils.{KafkaThread, LogContext, Time, Utils}
 import org.apache.kafka.common.{Node, TopicPartition}
 
 import scala.collection.JavaConverters._

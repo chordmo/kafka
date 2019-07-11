@@ -22,7 +22,7 @@ import joptsimple.OptionException
 import kafka.utils.TestUtils
 import org.apache.kafka.clients.consumer.{ConsumerConfig, RoundRobinAssignor}
 import org.apache.kafka.common.TopicPartition
-import org.apache.kafka.common.errors.{TimeoutException}
+import org.apache.kafka.common.errors.TimeoutException
 import org.junit.Assert._
 import org.junit.Test
 

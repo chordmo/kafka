@@ -16,8 +16,9 @@
  */
 package kafka.utils.timer
 
-import org.junit.Assert._
 import java.util.concurrent.atomic._
+
+import org.junit.Assert._
 import org.junit.Test
 
 class TimerTaskListTest {

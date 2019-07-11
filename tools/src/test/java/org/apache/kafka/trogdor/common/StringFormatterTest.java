@@ -18,18 +18,17 @@
 package org.apache.kafka.trogdor.common;
 
 import org.junit.Rule;
+import org.junit.Test;
 import org.junit.rules.Timeout;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.junit.Test;
 
 import java.time.ZoneOffset;
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
-
-import static org.apache.kafka.trogdor.common.StringFormatter.durationString;
 import static org.apache.kafka.trogdor.common.StringFormatter.dateString;
+import static org.apache.kafka.trogdor.common.StringFormatter.durationString;
+import static org.junit.Assert.assertEquals;
 
 public class StringFormatterTest {
     private static final Logger log = LoggerFactory.getLogger(StringFormatterTest.class);

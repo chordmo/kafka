@@ -22,13 +22,7 @@ import org.apache.kafka.common.KafkaException;
 import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.header.Header;
 import org.apache.kafka.common.header.internals.RecordHeader;
-import org.apache.kafka.common.record.CompressionType;
-import org.apache.kafka.common.record.LegacyRecord;
-import org.apache.kafka.common.record.MemoryRecords;
-import org.apache.kafka.common.record.MemoryRecordsBuilder;
-import org.apache.kafka.common.record.Record;
-import org.apache.kafka.common.record.RecordBatch;
-import org.apache.kafka.common.record.TimestampType;
+import org.apache.kafka.common.record.*;
 import org.junit.Test;
 
 import java.nio.ByteBuffer;
@@ -36,15 +30,8 @@ import java.util.Arrays;
 import java.util.Deque;
 import java.util.concurrent.ExecutionException;
 
-import static org.apache.kafka.common.record.RecordBatch.MAGIC_VALUE_V0;
-import static org.apache.kafka.common.record.RecordBatch.MAGIC_VALUE_V1;
-import static org.apache.kafka.common.record.RecordBatch.MAGIC_VALUE_V2;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.apache.kafka.common.record.RecordBatch.*;
+import static org.junit.Assert.*;
 
 public class ProducerBatchTest {
 

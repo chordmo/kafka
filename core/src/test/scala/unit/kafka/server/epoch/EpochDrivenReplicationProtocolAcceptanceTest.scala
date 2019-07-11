@@ -25,8 +25,8 @@ import kafka.log.Log
 import kafka.server.KafkaConfig._
 import kafka.server.{KafkaConfig, KafkaServer}
 import kafka.tools.DumpLogSegments
-import kafka.utils.{CoreUtils, Logging, TestUtils}
 import kafka.utils.TestUtils._
+import kafka.utils.{CoreUtils, Logging, TestUtils}
 import kafka.zk.ZooKeeperTestHarness
 import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
@@ -37,8 +37,8 @@ import org.junit.Assert.{assertEquals, assertTrue}
 import org.junit.{After, Before, Test}
 
 import scala.collection.JavaConverters._
-import scala.collection.mutable.{ListBuffer => Buffer}
 import scala.collection.Seq
+import scala.collection.mutable.{ListBuffer => Buffer}
 
 /**
   * These tests were written to assert the addition of leader epochs to the replication protocol fix the problems

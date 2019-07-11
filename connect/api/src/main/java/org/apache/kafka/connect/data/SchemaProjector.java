@@ -19,14 +19,7 @@ package org.apache.kafka.connect.data;
 import org.apache.kafka.connect.data.Schema.Type;
 import org.apache.kafka.connect.errors.SchemaProjectorException;
 
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 /**
  * <p>

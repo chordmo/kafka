@@ -19,13 +19,13 @@ package kafka.tools
 
 import java.io.ByteArrayOutputStream
 
-import kafka.log.{ Log, LogConfig, LogManager }
-import kafka.server.{ BrokerTopicStats, LogDirFailureChannel }
-import kafka.utils.{ MockTime, TestUtils }
-import org.apache.kafka.common.record.{ CompressionType, MemoryRecords, SimpleRecord }
+import kafka.log.{Log, LogConfig, LogManager}
+import kafka.server.{BrokerTopicStats, LogDirFailureChannel}
+import kafka.utils.{MockTime, TestUtils}
+import org.apache.kafka.common.record.{CompressionType, MemoryRecords, SimpleRecord}
 import org.apache.kafka.common.utils.Utils
 import org.junit.Assert._
-import org.junit.{ After, Before, Test }
+import org.junit.{After, Before, Test}
 
 class DumpLogSegmentsTest {
 

@@ -16,9 +16,9 @@
  */
 package org.apache.kafka.clients.consumer;
 
-import java.util.Collection;
-
 import org.apache.kafka.common.TopicPartition;
+
+import java.util.Collection;
 
 /**
  * A callback interface that the user can implement to trigger custom actions when the set of partitions assigned to the

@@ -22,21 +22,20 @@ package org.apache.kafka.streams.scala
 import java.util.Properties
 import java.util.regex.Pattern
 
-import org.scalatest.junit.JUnitSuite
-import org.junit.Assert._
-import org.junit._
-import org.junit.rules.TemporaryFolder
-import org.apache.kafka.streams.KeyValue
-import org.apache.kafka.streams._
-import org.apache.kafka.streams.scala.kstream._
-import org.apache.kafka.streams.integration.utils.{EmbeddedKafkaCluster, IntegrationTestUtils}
 import org.apache.kafka.clients.consumer.ConsumerConfig
 import org.apache.kafka.clients.producer.ProducerConfig
 import org.apache.kafka.common.serialization._
 import org.apache.kafka.common.utils.MockTime
+import org.apache.kafka.streams.{KeyValue, _}
+import org.apache.kafka.streams.integration.utils.{EmbeddedKafkaCluster, IntegrationTestUtils}
+import org.apache.kafka.streams.scala.ImplicitConversions._
+import org.apache.kafka.streams.scala.kstream._
 import org.apache.kafka.test.{IntegrationTest, TestUtils}
-import ImplicitConversions._
+import org.junit.Assert._
+import org.junit._
 import org.junit.experimental.categories.Category
+import org.junit.rules.TemporaryFolder
+import org.scalatest.junit.JUnitSuite
 
 /**
  * Test suite that does a classic word count example.
@@ -134,13 +133,9 @@ class WordCountTest extends JUnitSuite with WordCountTestData {
 
   @Test def testShouldCountWordsJava(): Unit = {
 
+    import org.apache.kafka.streams.kstream.{KGroupedStream => KGroupedStreamJ, KStream => KStreamJ, KTable => KTableJ, _}
     import org.apache.kafka.streams.{KafkaStreams => KafkaStreamsJ, StreamsBuilder => StreamsBuilderJ}
-    import org.apache.kafka.streams.kstream.{
-      KTable => KTableJ,
-      KStream => KStreamJ,
-      KGroupedStream => KGroupedStreamJ,
-      _
-    }
+
     import collection.JavaConverters._
 
     val streamsConfiguration = getStreamsConfiguration()

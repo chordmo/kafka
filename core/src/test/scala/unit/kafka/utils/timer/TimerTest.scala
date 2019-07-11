@@ -16,11 +16,11 @@
  */
 package kafka.utils.timer
 
+import java.util.concurrent.atomic._
 import java.util.concurrent.{CountDownLatch, TimeUnit}
 
 import org.junit.Assert._
-import java.util.concurrent.atomic._
-import org.junit.{Test, After, Before}
+import org.junit.{After, Before, Test}
 
 import scala.collection.mutable.ArrayBuffer
 

@@ -17,24 +17,19 @@
 
 package org.apache.kafka.connect.rest.basic.auth.extension;
 
-import java.util.regex.Pattern;
-import javax.ws.rs.HttpMethod;
 import org.apache.kafka.common.config.ConfigException;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.Base64;
-
-import javax.security.auth.callback.Callback;
-import javax.security.auth.callback.CallbackHandler;
-import javax.security.auth.callback.NameCallback;
-import javax.security.auth.callback.PasswordCallback;
-import javax.security.auth.callback.UnsupportedCallbackException;
+import javax.security.auth.callback.*;
 import javax.security.auth.login.LoginContext;
 import javax.security.auth.login.LoginException;
+import javax.ws.rs.HttpMethod;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.Response;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+import java.util.regex.Pattern;
 
 public class JaasBasicAuthFilter implements ContainerRequestFilter {
     private static final String CONNECT_LOGIN_MODULE = "KafkaConnect";

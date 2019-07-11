@@ -25,14 +25,13 @@ import kafka.utils._
 import kafka.zk.KafkaZkClient
 import org.apache.kafka.clients.admin.AdminClientConfig
 import org.apache.kafka.common.errors.TimeoutException
-
-import collection.JavaConverters._
-import org.apache.kafka.common.utils.{Time, Utils}
 import org.apache.kafka.common.security.JaasUtils
+import org.apache.kafka.common.utils.{Time, Utils}
 import org.apache.kafka.common.{KafkaFuture, TopicPartition}
 import org.apache.zookeeper.KeeperException.NodeExistsException
 
-import collection._
+import scala.collection.JavaConverters._
+import scala.collection._
 
 object PreferredReplicaLeaderElectionCommand extends Logging {
 

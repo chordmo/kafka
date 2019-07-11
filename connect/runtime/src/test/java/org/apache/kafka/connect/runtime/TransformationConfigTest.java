@@ -18,18 +18,7 @@ package org.apache.kafka.connect.runtime;
 
 import org.apache.kafka.connect.runtime.isolation.Plugins;
 import org.apache.kafka.connect.tools.MockConnector;
-import org.apache.kafka.connect.transforms.Cast;
-import org.apache.kafka.connect.transforms.ExtractField;
-import org.apache.kafka.connect.transforms.Flatten;
-import org.apache.kafka.connect.transforms.HoistField;
-import org.apache.kafka.connect.transforms.InsertField;
-import org.apache.kafka.connect.transforms.MaskField;
-import org.apache.kafka.connect.transforms.RegexRouter;
-import org.apache.kafka.connect.transforms.ReplaceField;
-import org.apache.kafka.connect.transforms.SetSchemaMetadata;
-import org.apache.kafka.connect.transforms.TimestampConverter;
-import org.apache.kafka.connect.transforms.TimestampRouter;
-import org.apache.kafka.connect.transforms.ValueToKey;
+import org.apache.kafka.connect.transforms.*;
 import org.junit.Test;
 
 import java.util.HashMap;

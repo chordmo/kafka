@@ -28,9 +28,9 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.apache.kafka.common.protocol.types.Type.INT64;
-import static org.apache.kafka.common.protocol.CommonFields.PRINCIPAL_TYPE;
 import static org.apache.kafka.common.protocol.CommonFields.PRINCIPAL_NAME;
+import static org.apache.kafka.common.protocol.CommonFields.PRINCIPAL_TYPE;
+import static org.apache.kafka.common.protocol.types.Type.INT64;
 
 public class CreateDelegationTokenRequest extends AbstractRequest {
     private static final String RENEWERS_KEY_NAME = "renewers";

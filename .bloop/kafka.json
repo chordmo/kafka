@@ -1,0 +1,123 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "kafka",
+        "directory" : "/Users/m/code/bigdata/kafka/kafka",
+        "sources" : [
+            "/Users/m/code/bigdata/kafka/kafka/src/main/scala-2.12",
+            "/Users/m/code/bigdata/kafka/kafka/src/main/scala",
+            "/Users/m/code/bigdata/kafka/kafka/src/main/java",
+            "/Users/m/code/bigdata/kafka/kafka/target/scala-2.12/src_managed/main"
+        ],
+        "dependencies" : [
+        ],
+        "classpath" : [
+            "/Users/m/.sbt/boot/scala-2.12.7/lib/scala-library.jar"
+        ],
+        "out" : "/Users/m/code/bigdata/kafka/kafka/.bloop/kafka",
+        "classesDir" : "/Users/m/code/bigdata/kafka/kafka/.bloop/kafka/scala-2.12/classes",
+        "resources" : [
+            "/Users/m/code/bigdata/kafka/kafka/src/main/resources",
+            "/Users/m/code/bigdata/kafka/kafka/target/scala-2.12/resource_managed/main"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.7",
+            "options" : [
+                "-P:semanticdb:synthetics:on",
+                "-P:semanticdb:failures:warning",
+                "-P:semanticdb:sourceroot:/Users/m/code/bigdata/kafka/kafka",
+                "-Yrangepos",
+                "-Xplugin-require:semanticdb",
+                "-Xplugin:/Users/m/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.7/jars/semanticdb-scalac_2.12.7-4.2.0.jar"
+            ],
+            "jars" : [
+                "/Users/m/.sbt/boot/scala-2.12.7/lib/scala-library.jar",
+                "/Users/m/.sbt/boot/scala-2.12.7/lib/scala-compiler.jar",
+                "/Users/m/.sbt/boot/scala-2.12.7/lib/jline.jar",
+                "/Users/m/.sbt/boot/scala-2.12.7/lib/scala-reflect.jar",
+                "/Users/m/.sbt/boot/scala-2.12.7/lib/scala-xml_2.12.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home/jre",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.7",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/Users/m/.sbt/boot/scala-2.12.7/lib/scala-library.jar"
+                        },
+                        {
+                            "name" : "scala-library",
+                            "classifier" : "sources",
+                            "path" : "/Users/m/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.7-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

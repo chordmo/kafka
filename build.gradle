@@ -1475,8 +1475,8 @@ project(':connect:runtime') {
     compile libs.jettyClient
     compile(libs.reflections)
     compile(libs.mavenArtifact)
-    compile('kafka.connect.jdbc:5.2.2')
-
+//    compile('kafka-connect-jdbc')
+//    compile files('libs/your-library-file-name.jar')
     testCompile project(':clients').sourceSets.test.output
     testCompile libs.easymock
     testCompile libs.junit

@@ -14,7 +14,14 @@
 // limitations under the License.
 
 import org.ajoberstar.grgit.Grgit
+// 添加本地maven
+//def lmr = 'file://' + new File('/Users/m/.m2/repository').absolutePath
 
+//repositories {
+//  mavenCentral()
+//  mavenLocal()
+//  maven { url lmr }
+//}
 buildscript {
   repositories {
     mavenCentral()
@@ -22,6 +29,9 @@ buildscript {
     maven {
       url "https://plugins.gradle.org/m2/"
     }
+//    maven {
+//      url  '/Users/m/.m2/repository'
+//    }
   }
   apply from: file('gradle/buildscript.gradle'), to: buildscript
 
@@ -89,7 +99,7 @@ allprojects {
 }
 
 ext {
-  gradleVersion = "5.1.1"
+  gradleVersion = "5.5"
   minJavaVersion = "8"
   buildVersionFileName = "kafka-version.properties"
 
@@ -582,6 +592,7 @@ project(':core') {
     compile libs.scalaReflect
     compile libs.scalaLogging
     compile libs.slf4jApi
+//    compile files('lib/kafka-connect-jdbc-5.2.2.jar')
     compile(libs.zkclient) {
       exclude module: 'zookeeper'
     }
@@ -1453,6 +1464,7 @@ project(':connect:json') {
   }
 }
 
+
 project(':connect:runtime') {
   archivesBaseName = "connect-runtime"
 
@@ -1476,6 +1488,11 @@ project(':connect:runtime') {
     compile libs.jettyClient
     compile(libs.reflections)
     compile(libs.mavenArtifact)
+//    compile fileTree(dir:'/Users/m/code/bigdata/kafka/kafka/lib',includes:['*.jar'])
+//    compile group: 'io.confluent', name: 'kafka-connect-jdbc', version: '5.2.2'
+//    classpath 'io.confluent:kafka-connect-jdbc:5.2.2'
+//    compile files('/Users/m/code/bigdata/kafka/kafka/lib/kafka-connect-jdbc-5.2.2.jar')
+
 
     testCompile project(':clients').sourceSets.test.output
     testCompile libs.easymock

@@ -56,3 +56,5 @@ clients/src/generated
 
 .metals/
 .bloop/
+
+kafka-connect-jdbc/

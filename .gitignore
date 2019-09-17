@@ -54,3 +54,4 @@ systest/
 *.swp
 clients/src/generated
 .metals
+clients/src/generated-test

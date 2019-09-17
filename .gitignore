@@ -54,3 +54,5 @@ systest/
 *.swp
 clients/src/generated
 .metals
+
+kafka-connect-jdbc
